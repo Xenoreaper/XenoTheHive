@@ -1,0 +1,40 @@
+.social-bar {
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  background-color: black;
+  max-width: 250px; /* Change this value as needed */
+  margin: 0 auto;
+  padding: 7px 5px;
+  border-radius: 10px;
+  top: 5px;
+  right: 5px;
+}
+
+.social-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.social-bar a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.social-bar img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-bar .twitter:hover img {
+  background-color: #1d9bf0;
+  border-radius: 5px;
+}
+
+.social-bar .youtube:hover img {
+  background-color: #ea3223;
+  border-radius: 5px;
+}
