@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website</title>
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/navbar.css">
+        <link rel="stylesheet" href="style/partner-projekte.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="scripts/main.js"></script>
+    </head>
+    <body onload="loadPage()">
+        <header id="header"></header>
+        <main>
+            <div class="projekte">
+                <h2>Projekte:</h2>
+                <p>Das sind ein paar der Projekte an welchen ich gearbeitet habe.</p>
+                <div class="vactive">
+                    <iframe id="vactive" class="youtube-video" src="https://www.youtube-nocookie.com/embed/oKIjS4sdVF0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                </div>
+                <div class="vinactivelist">
+                    <img class="vinactive" onclick="switchVideo(2)" src="https://img.youtube.com/vi/oKIjS4sdVF0/maxresdefault.jpg" alt="https://www.youtube.com/embed/oKIjS4sdVF0">
+                    <img class="vinactive" onclick="switchVideo(0)" src="https://img.youtube.com/vi/_BIOlnhmYv0/maxresdefault.jpg" alt="https://www.youtube.com/embed/_BIOlnhmYv0">
+                    <img class="vinactive" onclick="switchVideo(1)" src="https://img.youtube.com/vi/AGqXFlC1jp0/maxresdefault.jpg" alt="https://www.youtube.com/embed/AGqXFlC1jp0">
+                    <img class="vinactive" onclick="switchVideo(2)" src="https://img.youtube.com/vi/oKIjS4sdVF0/maxresdefault.jpg" alt="https://www.youtube.com/embed/oKIjS4sdVF0">
+                    <img class="vinactive" onclick="switchVideo(0)" src="https://img.youtube.com/vi/_BIOlnhmYv0/maxresdefault.jpg" alt="https://www.youtube.com/embed/_BIOlnhmYv0">
+                </div>
+            </div>
+            <hr>
+            <div class="partner">
+                <h2>Partner:</h2>
+                <p>Das sind ein paar Leute mit denen ich zusammen gearbeitet habe.</p>
+                <div class="collaboration center">
+                    <a class="collaboration" href="https://www.youtube.com/@markiplier"><img src="https://yt3.googleusercontent.com/ytc/AGIKgqNMYyU2Cyk6IirnBf5H1vHvoX5uP1bIZvY_Thh8VQ=s176-c-k-c0x00ffffff-no-rj" alt=""> <h3>Markiplier</h3></a>
+                    <a class="collaboration" href="https://www.youtube.com/@SMii7Y"><img src="https://yt3.googleusercontent.com/ytc/AGIKgqObtbIq_SaJB2C5v3IFkMELRxnTvNnEQMEqnk0j0Q=s176-c-k-c0x00ffffff-no-rj" alt=""><h3>SMii7Y</h3></a>
+                    <a class="collaboration" href="https://www.youtube.com/@LinusTechTips"><img src="https://yt3.googleusercontent.com/Vy6KL7EM_apxPSxF0pPy5w_c87YDTOlBQo3MADDF0Wl51kwxmt9wmRotnt2xQXwlrcyO0Xe56w=s176-c-k-c0x00ffffff-no-rj" alt=""><h3>Linus Tech Tips</h3></a>
+                    <a class="collaboration" href="https://www.youtube.com/@GameTheory"><img src="https://yt3.googleusercontent.com/3naPCRx2OyDJC3-T5OZMEscJqYxOKTN8TopYl19QGwM35rRqPSFbC6yovicQLeboIQGHCtuM=s176-c-k-c0x00ffffff-no-rj" alt=""><h3>The Game Theorists</h3></a>
+                    <a class="collaboration" href="https://www.youtube.com/@Sykkuno"><img src="https://yt3.googleusercontent.com/pHb5MqbZsGRnQhO6xS_cC7P4-vJX35Tx5k55_GzRhuG86YnQoxZLPgmq5Fdian6QftQUrolL7A=s176-c-k-c0x00ffffff-no-rj" alt=""><h3>Sykkuno</h3></a>
+                </div>
+            </div>
+            <hr>
+            <div class="sponsor">
+                <h2>Sponsoren:</h2>
+                <p>Diese guten Leute haben mich zuvor gesponsort.</p>
+                <div class="collaboration center">
+                    <a class="collaboration" href="https://air-up.com/"><img src="https://yt3.googleusercontent.com/IE8glAWpfnN2cHfCV9Bq4coKwmxnhlEhrzBZ6TX8Ha3dfL2ihJud1IgvE8Ol5_sKBpjvrH9ewQ=s176-c-k-c0x00ffffff-no-rj" alt=""><h3>air up</h3></a>
+                    <a class="collaboration" href="https://www.epicgames.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Epic_Games_logo.svg/516px-Epic_Games_logo.svg.png?20180409155704" alt=""><h3>Epic Games</h3></a>
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+            <p>© 2023 Xenoreaper</p>
+            <div class="socials">
+                <a href="https://youtube.com/@Xenoreaper" class="fa fa-youtube"></a>
+                <a href="https://twitter.com/@Xenoreaper" class="fa fa-twitter"></a>
+                <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/x3noreaper/" class="fa fa-instagram"></a>
+            </div>
+            <a id="footer-impressum" href="impressum.html">Impressum</a>
+        </footer>
+    </body>
+</html>

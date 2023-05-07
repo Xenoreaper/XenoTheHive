@@ -1,0 +1,12 @@
+main p {
+    font-size: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    main p {
+        font-size: 20px;
+    }
+}
