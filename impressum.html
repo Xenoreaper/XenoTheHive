@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Impressum</title>
+        <link rel="icon" type="resources/xeno.ico" href="resources/xeno-icon.png">
         <link rel="stylesheet" href="style/main.css">
         <link rel="stylesheet" href="style/navbar.css">
         <link rel="stylesheet" href="style/impressum.css">
@@ -12,51 +13,88 @@
         <script src="scripts/main.js"></script>
     </head>
     <body onload="matchTheme()">
-        <hr id="top">
         <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="lebenslauf.html">Lebenslauf</a></li>
-                    <li><a href="partner-projekte.html">Vergangene Partner und Projekte</a></li>
-                    <li><a href="about-me.html">Über mich</a></li>
-                </ul>
-            </nav>
             <div class="box">
                 <a href="index.html" title="Home"><img id="logo" src="resources/xeno.png" alt=""></a>
-                <button class="fa fa-cog" onclick="openSettings()" id="settings-icon"></button>
+                <span id="navmenu-button" class="unselectable" onclick="openNav()">&#9776;</span>
+                <span id="settings-icon" class="fa fa-ellipsis unselectable" onclick="openSettings()">&#xf142;</span>
             </div>
-            <div class="settings-popup" id="settings">
+            <div class="settings-popup unselectable" id="settings">
                 <div>
-                    <p>Settings</p>
-                    <button class="fa fa-cog" onclick="closeSettings()"></button>
+                    <h4>Settings</h4>
+                    <span id="close-settings-icon" class="fa fa-ellipsis" onclick="closeSettings()">&#xf141;</span>
                 </div>
                 <hr>
-                <div>
+                <div class="appearance-setting">
                     <p>Darstellung</p>
-                <button class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/light.png" alt="Theme toggle"></button>
+                    <span class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/light.png"
+                            alt="Theme toggle"></span>
+                </div>
+                <div>
+                    <p>Sprache</p>
                 </div>
             </div>
         </header>
+        <div> <!-- Navigation -->
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="lebenslauf.html">Lebenslauf</a></li>
+                    <li><a href="partner-projekte.html">Vergangene Partner und Projekte</a></li>
+                    <li><a href="referenzen.html">Referenzen</a></li>
+                    <li><a href="about-me.html">Über mich</a></li>
+                </ul>
+            </nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Start</a>
+                    <a href="lebenslauf.html">Lebenslauf</a>
+                    <a href="partner-projekte.html">Vergangene Partner und Projekte</a>
+                    <a href="referenzen.html">Referenzen</a>
+                    <a href="about-me.html">Über mich</a>
+                </div>
+            </div>
+        </div>
         <main>
             <div class="wichtig">
                 <h2>Hinweis:</h2>
                 <p>Der Inhalt dieser Website bezieht sich auf eine halbfiktive Person und auf einen Zeitpunkt nach 2023. Die meisten Links verweisen auf vorhandene Accounts, welche allerdings nicht unbedingt alle auf der Seite genannten Kriterien an Erfahrung, Fähigkeiten, Talenten und Inhalt erfüllen.</p>
+                <div class="informational">
+                    <h3>Infos zu meiner Ausführung der Aufgabe:</h3>
+                    <p>Ich garantiere die Responsiveness der Seite nur bis zu einer minimalen Displayweite von 335 Pixeln.</p>
+                </div>
             </div>
-            <div>
+            <div class="section">
                 <h2>Anbieter:</h2>
                 <p>Xenoreaper<br>Straße 69<br>12345 Stadt</p>
                 <p>Telefon: 123456789<br>E-Mail: xenoreaper@gmail.com</p>
                 <p>Umsatzsteuer-ID-Nr.: DE 435685918</p>
             </div>
-            <div>
+            <div class="section">
                 <h2>Copyright:</h2>
                 <p>Copyright 2023 Xenoreaper</p>
-                <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
-                <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a>
-                <p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+                <h3>Die folgenden Open-Source-Bibliotheken wurden für diese Seite verwendet:</h3>
+                <a class="cc-link" href="https://raw.githubusercontent.com/googlefonts/roboto/main/LICENSE">
+                    <div class="copyright">
+                        <div class="cc-parts">
+                            <p class="cc-part1">@googlefonts/roboto@2.138</p>
+                            <p class="cc-part2">License: Apache Version 2.0</p>
+                        </div>
+                        <p class="fa fa-chevron-right"></p>
+                    </div>
+                </a>
+                <a class="cc-link" href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/LICENSE.txt">
+                    <div class="copyright">
+                        <div class="cc-parts">
+                            <p class="cc-part1">@FortAwesome/Font-Awesome@6.4.0</p>
+                            <p class="cc-part2">License: CC BY 4.0</p>
+                        </div>
+                        <p class="fa fa-chevron-right"></p>
+                    </div>
+                </a>
             </div>
-            <a id="back-to-top" class="fa fa-chevron-up" href="#top" title="Back to top"></a>
+            <a id="back-to-top" class="fa fa-chevron-up" href="#" title="Back to top"></a>
         </main>
         <footer>
             <p>© 2023 Xenoreaper</p>

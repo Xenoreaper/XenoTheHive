@@ -14,7 +14,7 @@ function toggleTheme() {
 }
 
 function loadPage(page, title) {
-    fetch("/html-additions/header.html")
+    fetch("html-additions/header.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("header").innerHTML = data;
@@ -38,7 +38,7 @@ function saveDarkModeToCache(isDarkMode) {
 
 function readDarkModeFromCache() {
     return localStorage.getItem('isDarkMode');
-  }
+}
 
 function matchTheme() {
     var isDarkMode = readDarkModeFromCache();
@@ -81,6 +81,21 @@ function closePopup() {
 
 function clearForm() {
     document.querySelector("form").reset();
+}
+
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+
+// Newsletter info im cache speichern? (boolean, string, string)
+function saveRegistrationToCache(registered, name, mail) {
+    localStorage.setItem("registered", registered);
+    localStorage.setItem("name", name);
+    localStorage.setItem("mail", mail);
 }
 
 function scrollFunction() {

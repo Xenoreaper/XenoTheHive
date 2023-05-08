@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Who is Xenoreaper?</title>
+        <title>Wer ist Xenoreaper?</title>
+        <link rel="icon" type="resources/xeno.ico" href="resources/xeno-icon.png">
         <link rel="stylesheet" href="style/main.css">
         <link rel="stylesheet" href="style/navbar.css">
         <link rel="stylesheet" href="style/about-me.css">
@@ -13,32 +14,48 @@
         <script src="scripts/main.js"></script>
     </head>
     <body onload="matchTheme()">
-        <hr id="top">
         <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="lebenslauf.html">Lebenslauf</a></li>
-                    <li><a href="partner-projekte.html">Vergangene Partner und Projekte</a></li>
-                    <li><a class="active" href="about-me.html">Über mich</a></li>
-                </ul>
-            </nav>
             <div class="box">
                 <a href="index.html" title="Home"><img id="logo" src="resources/xeno.png" alt=""></a>
-                <button class="fa fa-cog" onclick="openSettings()" id="settings-icon"></button>
+                <span id="navmenu-button" class="unselectable" onclick="openNav()">&#9776;</span>
+                <span id="settings-icon" class="fa fa-ellipsis unselectable" onclick="openSettings()">&#xf142;</span>
             </div>
-            <div class="settings-popup" id="settings">
+            <div class="settings-popup unselectable" id="settings">
                 <div>
-                    <p>Settings</p>
-                    <button class="fa fa-cog" onclick="closeSettings()"></button>
+                    <h4>Settings</h4>
+                    <span id="close-settings-icon" class="fa fa-ellipsis" onclick="closeSettings()">&#xf141;</span>
                 </div>
                 <hr>
-                <div>
+                <div class="appearance-setting">
                     <p>Darstellung</p>
-                <button class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/light.png" alt="Theme toggle"></button>
+                    <span class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/light.png" alt="Theme toggle"></span>
+                </div>
+                <div>
+                    <p>Sprache</p>
                 </div>
             </div>
         </header>
+        <div> <!-- Navigation -->
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="lebenslauf.html">Lebenslauf</a></li>
+                    <li><a href="partner-projekte.html">Vergangene Partner und Projekte</a></li>
+                    <li><a href="referenzen.html">Referenzen</a></li>
+                    <li><a class="active" href="about-me.html">Über mich</a></li>
+                </ul>
+            </nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Start</a>
+                    <a href="lebenslauf.html">Lebenslauf</a>
+                    <a href="partner-projekte.html">Vergangene Partner und Projekte</a>
+                    <a href="referenzen.html">Referenzen</a>
+                    <a href="about-me.html">Über mich</a>
+                </div>
+            </div>
+        </div>
         <main>
             <div class="who">
                 <h2>Wer ist Xenoreaper?</h2>
@@ -72,7 +89,7 @@
                     <input class="button" type="submit" value="Abonnieren">
                 </div>
             </form>
-            <a id="back-to-top" class="fa fa-chevron-up" href="#top" title="Back to top"></a>
+            <a id="back-to-top" class="fa fa-chevron-up" href="#" title="Back to top"></a>
         </main>
         <footer>
             <p>© 2023 Xenoreaper</p>
