@@ -83,6 +83,7 @@
     * Favicon und Titel pro Seite
 * Impressum und DSGVO?
     * Copyright
+        * meine Lizenz hinzufügen
     * Lizenzen
     * Terms of Use?
     * Privacy Policy?
