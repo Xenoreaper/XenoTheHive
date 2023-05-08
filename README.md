@@ -26,9 +26,11 @@
     * Verlinkung der Seiten
     * Dark-Mode
         * Cache: Dark-Mode ist Seitenübergreifend
-    * ~~Newsletter-Anmeldung~~
+    * Newsletter-Anmeldung
     * iframe Videos
         * Video durchwechselbar
+    * Back to top Button (taucht nur auf wenn man scrollt)
+    * Website vollständig Responsive (garantiert bis minimal 350px)
 * Genutzte Elemente
     * form
     * a, p
@@ -42,15 +44,17 @@
     * input
     * button
     * IDs, Klassen
+    * hr
 * HTML5-Korrektheit
     * About Me
     * Index
     * Impressum
     * Lebenslauf
     * Partner und Projekte
+    * Referenzen
+* gehosted auf GitHub
 ### To-Do
 * Interaktivität
-    * Newsletter-Anmeldung
     * weitere Funktionen
         * Feedback
         * Kontakt
@@ -63,7 +67,6 @@
             * Englisch
             * Deutsch
 * Header und Footer entweder in jede HTML oder hosting
-* (Hosting auf GitHub)
 * Umfang
     * Zusätzliche Seite: Referenzen/Reviews/Feedback
 * Design
@@ -72,3 +75,5 @@
         * Dancing Script behalten für irgendwas verwenden?
         * Zitat mit anderem Font?
 * Impressum und DSGVO?
+    * Copyright
+    * Lizenzen
