@@ -5,7 +5,6 @@ h2 {
 }
 
 main p {
-    font-family: Dancing Script, cursive;
     font-size: 20px;
 }
 
@@ -68,6 +67,45 @@ input {
 
 .hidden {
     display: none;
+}
+
+#popup {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(120, 120, 120);
+    border: 0;
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 999;
+}
+
+#popup .close {
+    margin-top: 15px;
+    background: rgb(118, 221, 0);
+    color: black;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 50px;
+}
+
+#popup .close:hover {
+    background: rgb(98, 201, 0);
+}
+
+#popup p {
+    margin: 0;
+    text-align: center;
+}
+
+.dark-mode #popup {
+    background-color: rgb(230, 230, 230);
 }
 
 @media only screen and (max-width: 620px) {

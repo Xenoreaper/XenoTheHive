@@ -57,7 +57,15 @@
     
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 450px) {
+    /* For mobile phones: */
+    .navbar a {
+        padding: 4px 8px;
+    }
+    
+}
+
+@media only screen and (max-width: 350px) {
     /* For mobile phones: */
     .navbar {
         visibility: hidden;

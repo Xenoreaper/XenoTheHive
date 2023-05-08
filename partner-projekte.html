@@ -12,6 +12,7 @@
         <script src="scripts/main.js"></script>
     </head>
     <body onload="matchTheme()">
+        <hr id="top">
         <header>
             <nav class="navbar">
                 <ul>
@@ -23,8 +24,18 @@
             </nav>
             <div class="box">
                 <a href="index.html" title="Home"><img id="logo" src="resources/xeno.png" alt=""></a>
-                <h1 id="header-title"></h1>
-                <button class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/dark.png" alt="Theme toggle"></button>
+                <button class="fa fa-cog" onclick="openSettings()" id="settings-icon"></button>
+            </div>
+            <div class="settings-popup" id="settings">
+                <div>
+                    <p>Settings</p>
+                    <button class="fa fa-cog" onclick="closeSettings()"></button>
+                </div>
+                <hr>
+                <div>
+                    <p>Darstellung</p>
+                <button class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/light.png" alt="Theme toggle"></button>
+                </div>
             </div>
         </header>
         <main>
@@ -60,18 +71,20 @@
                 <p>Diese guten Leute haben mich zuvor gesponsort.</p>
                 <div class="collaboration center">
                     <a class="collaboration" href="https://air-up.com/"><img src="https://yt3.googleusercontent.com/IE8glAWpfnN2cHfCV9Bq4coKwmxnhlEhrzBZ6TX8Ha3dfL2ihJud1IgvE8Ol5_sKBpjvrH9ewQ=s176-c-k-c0x00ffffff-no-rj" alt=""><h3>air up</h3></a>
-                    <a class="collaboration" href="https://www.epicgames.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Epic_Games_logo.svg/516px-Epic_Games_logo.svg.png?20180409155704" alt=""><h3>Epic Games</h3></a>
+                    <a class="collaboration" href="https://epicgames.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Epic_Games_logo.svg/516px-Epic_Games_logo.svg.png?20180409155704" alt=""><h3>Epic Games</h3></a>
+                    <a class="collaboration" href="https://nordvpn.com/"><img src="https://media.wired.co.uk/photos/606d9bc4307b8f0b37c724bb/1:1/w_2000,h_2000,c_limit/wired-nordvpn-2.jpg" alt=""><h3>NordVPN</h3></a>
                 </div>
             </div>
-            
+            <a id="back-to-top" class="fa fa-chevron-up" href="#top" title="Back to top"></a>
         </main>
         <footer>
             <p>© 2023 Xenoreaper</p>
             <div class="socials">
                 <a href="https://youtube.com/@Xenoreaper" class="fa fa-youtube"></a>
-                <a href="https://twitter.com/@Xenoreaper" class="fa fa-twitter"></a>
+                <a href="https://twitter.com/@Xen0reaper" class="fa fa-twitter"></a>
                 <a href="https://linkedin.com" class="fa fa-linkedin"></a>
-                <a href="https://www.instagram.com/x3noreaper/" class="fa fa-instagram"></a>
+                <a href="https://instagram.com/x3noreaper/" class="fa fa-instagram"></a>
+                <a href="https://twitch.tv/xen0reaper" class="fa fa-twitch"></a>
             </div>
             <a id="footer-impressum" href="impressum.html">Impressum</a>
         </footer>

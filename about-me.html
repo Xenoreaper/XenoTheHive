@@ -13,6 +13,7 @@
         <script src="scripts/main.js"></script>
     </head>
     <body onload="matchTheme()">
+        <hr id="top">
         <header>
             <nav class="navbar">
                 <ul>
@@ -24,8 +25,18 @@
             </nav>
             <div class="box">
                 <a href="index.html" title="Home"><img id="logo" src="resources/xeno.png" alt=""></a>
-                <h1 id="header-title"></h1>
-                <button class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/dark.png" alt="Theme toggle"></button>
+                <button class="fa fa-cog" onclick="openSettings()" id="settings-icon"></button>
+            </div>
+            <div class="settings-popup" id="settings">
+                <div>
+                    <p>Settings</p>
+                    <button class="fa fa-cog" onclick="closeSettings()"></button>
+                </div>
+                <hr>
+                <div>
+                    <p>Darstellung</p>
+                <button class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/light.png" alt="Theme toggle"></button>
+                </div>
             </div>
         </header>
         <main>
@@ -45,10 +56,11 @@
                 <p>Was mich antreibt, ist die Freude am Experimentieren und das Streben nach ständiger Verbesserung. Ich bin immer auf der Suche nach neuen Ideen und Herausforderungen, um mich selbst zu pushen und meine Fähigkeiten zu erweitern. Außerdem macht es mir unglaublich viel Spaß, anderen Menschen Freude zu bereiten und sie zu inspirieren, ihre Leidenschaften zu verfolgen und ihre Ziele zu erreichen.</p>
                 <p>Ich hoffe, dass ich durch meine Inhalte und meine Arbeit als Entwickler dazu beitragen kann, die Gaming-Community zu bereichern und Menschen zu motivieren, ihre Träume zu verfolgen.</p>
             </div>
-            <div class="hidden" id="newsletter-popup">
-                <iframe id="newsletter-popup-iframe"></iframe>
+            <div id="popup">
+                <p>Danke für dein Interesse.<br>Du wurdest erfolgreich für den Newsletter angemeldet.<br>Eine Bestätigungs E-Mail folgt in kürze.</p>
+                <button class="close" onclick="closePopup()">Okay</button>
             </div>
-            <form target="newsletter-popup-iframe">
+            <form onsubmit="newsletterPopup(event)">
                 <div class="newsletter">
                     <h2>Newsletter:</h2>
                     <p>Falls du Interesse an meinen Projekten hast, kannst du dich für meinen Newsletter anmelden und jeden Monat die neuesten Updates bekommen.</p>
@@ -60,14 +72,16 @@
                     <input class="button" type="submit" value="Abonnieren">
                 </div>
             </form>
+            <a id="back-to-top" class="fa fa-chevron-up" href="#top" title="Back to top"></a>
         </main>
         <footer>
             <p>© 2023 Xenoreaper</p>
             <div class="socials">
                 <a href="https://youtube.com/@Xenoreaper" class="fa fa-youtube"></a>
-                <a href="https://twitter.com/@Xenoreaper" class="fa fa-twitter"></a>
+                <a href="https://twitter.com/@Xen0reaper" class="fa fa-twitter"></a>
                 <a href="https://linkedin.com" class="fa fa-linkedin"></a>
-                <a href="https://www.instagram.com/x3noreaper/" class="fa fa-instagram"></a>
+                <a href="https://instagram.com/x3noreaper/" class="fa fa-instagram"></a>
+                <a href="https://twitch.tv/xen0reaper" class="fa fa-twitch"></a>
             </div>
             <a id="footer-impressum" href="impressum.html">Impressum</a>
         </footer>

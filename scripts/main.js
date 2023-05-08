@@ -68,3 +68,31 @@ function openSettings() {
 function closeSettings() {
     document.getElementById("settings").style.display = "none";
 }
+
+function newsletterPopup(event) {
+    event.preventDefault();
+    document.getElementById("popup").style.display = "flex";
+    clearForm();
+}
+  
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+function clearForm() {
+    document.querySelector("form").reset();
+}
+
+function scrollFunction() {
+    var backToTopButton = document.getElementById("back-to-top");
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+}
+
+window.onscroll = function() {
+    scrollFunction();
+};
