@@ -18,8 +18,10 @@
     * Farben
     * formatierte Tabelle
     * Menü
+        * Navbar (Responsive siehe Interaktivität)
     * Fonts (Roboto)
     * Fotos (kommen noch paar dazu)
+    * Favicon und Titel pro Seite
     * extra: Dark-Mode
     * extra: Social-Media Links
 * Interaktivität
@@ -31,6 +33,8 @@
         * Video durchwechselbar
     * Back to top Button (taucht nur auf wenn man scrollt)
     * Website vollständig Responsive (garantiert bis minimal 350px)
+    * Navbar Responsiveness: wird zu einem Button der ein Overlay Menu öffnet
+    * Back to top Button (scrollt nach oben)
 * Genutzte Elemente
     * form
     * a, p
@@ -66,6 +70,8 @@
         * Sprache
             * Englisch
             * Deutsch
+    * Uhr???
+    * Newsletter registrierung im Cache speichern?
 * Header und Footer entweder in jede HTML oder hosting
 * Umfang
     * Zusätzliche Seite: Referenzen/Reviews/Feedback
@@ -74,6 +80,10 @@
     * Fonts
         * Dancing Script behalten für irgendwas verwenden?
         * Zitat mit anderem Font?
+    * Favicon und Titel pro Seite
 * Impressum und DSGVO?
     * Copyright
     * Lizenzen
+    * Terms of Use?
+    * Privacy Policy?
+* ! Border von Main entfernen wenn fertig !
