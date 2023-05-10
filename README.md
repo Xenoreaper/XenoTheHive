@@ -11,16 +11,32 @@
 * Umfang
     * Index
     * Impressum
+        * Eigene Lizenz
+        * Lizenzen der gebrauchten Imports
     * About Me
+        * extra: Gaming
+        * extra: Filme
+        * extra: Musik
     * Partner und Projekte
     * Lebenslauf
+    * extra: Referenzen
+    * extra: 404
 * Design
     * Farben
     * formatierte Tabelle
     * Menü
         * Navbar (Responsive siehe Interaktivität)
     * Fonts (Roboto)
-    * Fotos (kommen noch paar dazu)
+        * Roboto
+        * Dancing Font
+        * Icons
+            * Font Awesome
+            * Material Symbols Outlined
+    * Fotos
+        * Hintergrund auf index
+        * Video und Select auf Partner und Projekte
+        * Partner und Sponsor Icons auf Partner und Projekte
+        * Favorites auf Gaming, Musik und Filme
     * Favicon und Titel pro Seite
     * extra: Dark-Mode
     * extra: Social-Media Links
@@ -32,9 +48,10 @@
     * iframe Videos
         * Video durchwechselbar
     * Back to top Button (taucht nur auf wenn man scrollt)
-    * Website vollständig Responsive (garantiert bis minimal 350px)
-    * Navbar Responsiveness: wird zu einem Button der ein Overlay Menu öffnet
-    * Back to top Button (scrollt nach oben)
+    * Website vollständig Responsive (garantiert bis minimal 335px)
+        * Navbar Responsiveness: wird zu einem Button der ein Overlay Menu öffnet
+    * Über mich hover dropdown
+    * Settingsmenü
 * Genutzte Elemente
     * form
     * a, p
@@ -49,6 +66,7 @@
     * button
     * IDs, Klassen
     * hr
+    * grid
 * HTML5-Korrektheit
     * About Me
     * Index
@@ -70,21 +88,18 @@
         * Sprache
             * Englisch
             * Deutsch
-    * Uhr???
+    * ~~Uhr???~~ NEIN!
     * Newsletter registrierung im Cache speichern?
 * Header und Footer entweder in jede HTML oder hosting
-* Umfang
-    * Zusätzliche Seite: Referenzen/Reviews/Feedback
-* Design
-    * Einbindung von Fotos
-    * Fonts
-        * Dancing Script behalten für irgendwas verwenden?
-        * Zitat mit anderem Font?
-    * Favicon und Titel pro Seite
 * Impressum und DSGVO?
-    * Copyright
-        * meine Lizenz hinzufügen
-    * Lizenzen
     * Terms of Use?
+        * Limitation of liability
+        * Website use guidelines
+        * Definition of impermissible conduct/abuse and termination clause
+        * Governing law clause
+        * Privacy policy, if necessary
+        * Intellectual property clause
+        * Permitted use clause
+        * Information on the use of cookies
+        * Disclaimer that terms of use are subject to change
     * Privacy Policy?
-* ! Border von Main entfernen wenn fertig !
