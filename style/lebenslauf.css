@@ -32,8 +32,14 @@ td {
 }
 
 @media only screen and (max-width: 400px) {
-    table {
-        max-width: 100%;
+    th {
+        font-size: 15px;
+        height: 30px;
     }
 
+    td {
+        font-size: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }

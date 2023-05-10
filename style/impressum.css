@@ -55,6 +55,13 @@
     margin-bottom: 5px;
 }
 
+.cc-parts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
 .cc-part1 {
     margin-bottom: 0;
     color: rgb(0, 174, 255);
@@ -67,12 +74,6 @@
 
 .cc3 {
     color: rgb(175, 175, 175);
-}
-
-.cc-parts {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .cc-size-arrow {
