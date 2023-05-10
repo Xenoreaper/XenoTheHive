@@ -16,7 +16,6 @@ main {
     margin-bottom: 2.5%;
     margin-left: 20%;
     margin-right: 20%;
-    border: 1px solid black;
 }
 
 .centerText {
@@ -381,12 +380,6 @@ header .fa {
     }
 }
 
-@media only screen and (max-width: 1314px) {
-    .dropdown-content {
-        transform: translateY(50%);
-    }
-}
-
 @media only screen and (max-width: 1005px) {
     main {
         margin-left: 5%;
@@ -410,10 +403,6 @@ header .fa {
         font-size: 15px;
         padding: 7px;
         width: 15px;
-    }
-
-    .dropdown-content {
-        transform: translateY(56%);
     }
 }
 

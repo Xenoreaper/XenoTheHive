@@ -59,7 +59,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .cc-part1 {
@@ -78,6 +78,14 @@
 
 .cc-size-arrow {
     font-size: 35px;
+}
+
+#cc-link-lizenz-text {
+    color:rgb(0, 174, 255);
+}
+
+.dark-mode #cc-link-lizenz-text {
+    color: #0066CC;
 }
 
 .fa-chevron-right {

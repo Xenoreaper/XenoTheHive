@@ -59,6 +59,7 @@ input {
     background-color: #33B887;
     border: 0;
     font-size: 15px;
+    border-radius: 5px;
 }
 
 .dark-mode .button {
