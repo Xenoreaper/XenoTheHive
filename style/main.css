@@ -106,12 +106,8 @@ footer {
 }
 
 /* Font Awesome */
-
 footer .fa {
     font-size: 20px;
-}
-
-footer .fa {
     padding: 10px;
     width: 20px;
     text-align: center;
@@ -180,25 +176,23 @@ header .fa {
     font-size: 25px;
 }
 
-#settings-icon:hover {
-    background-color: rgb(166, 0, 0);
+.material-symbols-outlined {
+    margin-left: auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }
 
-#close-settings-icon:hover {
-    background: rgb(70, 70, 70);
-}
-
-.fa-cog {
-    /* font-size: 30px; */
-    background: none;
-}
-
-.fa-ellipsis {
-    background: none;
-}
-
-.dark-mode .fa-cog {
-    color: black;
+.left-margin {
+    margin-left: auto;
 }
 
 /* Settings Menu */
@@ -206,21 +200,46 @@ header .fa {
     display: none;
     position: absolute;
     background-color: rgb(90, 90, 90);
-    top: 105px;
+    top: 100px;
     right: 31px;
     border: 2px solid rgb(70, 70, 70);
     z-index: 9;
     border-radius: 20px;
     max-width: 250px;
+    z-index: 2;
+    box-shadow: 0px 8px 16px 0px  rgba(0, 0, 0, 0.2);
 }
 
 .settings-popup p {
     color: rgb(230, 230, 230);
 }
 
+.settings-popup a {
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+}
+
+.settings-popup a:hover {
+    text-decoration: underline;
+    color: rgb(200, 200, 200)
+}
+
+.selected-lang {
+    color: rgb(150, 150, 150);
+}
+
+.dark-mode .settings-popup a {
+    color: black;
+}
+
+.dark-mode .settings-popup a:hover {
+    text-decoration: underline;
+    color: rgb(70, 70, 70);
+}
+
 .settings-popup div {
     display: flex;
-    align-items: start;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -276,6 +295,14 @@ header .fa {
     width: 100%;
 }
 
+#settings-icon:hover {
+    background-color: rgb(166, 0, 0);
+}
+
+#close-settings-icon:hover {
+    background: rgb(70, 70, 70);
+}
+
 /* Dark Mode */
 .dark-mode {
     background-color: white;
@@ -303,6 +330,10 @@ header .fa {
     color: black;
 }
 
+.dark-mode footer .fa:hover {
+    background-color: white;
+}
+
 /* Back to top Button */
 #back-to-top {
     position: fixed;
@@ -320,10 +351,43 @@ header .fa {
     font-size: 25px;
     border-radius: 50%;
     opacity: 0.7;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 #back-to-top:hover {
     opacity: 1;
+}
+
+/* Über mich dropdown */
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(90, 90, 90);
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transform: translateY(33%);
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* Responsiveness */
@@ -338,6 +402,12 @@ header .fa {
     main {
         margin-left: 10%;
         margin-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 1314px) {
+    .dropdown-content {
+        transform: translateY(50%);
     }
 }
 
@@ -359,14 +429,31 @@ header .fa {
     }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 485px) {
+    .socials .fa {
+        font-size: 15px;
+        padding: 7px;
+        width: 15px;
+    }
 
+    .dropdown-content {
+        transform: translateY(56%);
+    }
+}
+
+@media only screen and (max-width: 410px) {
     header {
         margin-top: 0;
     }
 
     .settings-popup {
-        top: 30px;
+        top: 33px;
         right: 31px;
+    }
+
+    .socials .fa {
+        font-size: 10px;
+        padding: 5px;
+        width: 11px;
     }
 }

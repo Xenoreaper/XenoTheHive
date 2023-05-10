@@ -10,25 +10,26 @@
         <link rel="stylesheet" href="style/about-me.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
         <script src="scripts/main.js"></script>
     </head>
     <body onload="matchTheme()">
         <header>
             <div class="box">
                 <a href="index.html" title="Home"><img id="logo" src="resources/xeno.png" alt=""></a>
-                <span id="navmenu-button" class="unselectable" onclick="openNav()">&#9776;</span>
-                <span id="settings-icon" class="fa fa-ellipsis unselectable" onclick="openSettings()">&#xf142;</span>
+                <span id="navmenu-button" class="material-symbols-outlined unselectable" onclick="openNav()">menu</span>
+                <span id="settings-icon" class="material-symbols-outlined left-margin unselectable" onclick="openSettings()">more_vert</span>
             </div>
             <div class="settings-popup unselectable" id="settings">
                 <div>
                     <h4>Settings</h4>
-                    <span id="close-settings-icon" class="fa fa-ellipsis" onclick="closeSettings()">&#xf141;</span>
+                    <span id="close-settings-icon" class="material-symbols-outlined left-margin" onclick="closeSettings()">more_vert</span>
                 </div>
                 <hr>
                 <div class="appearance-setting">
                     <p>Darstellung</p>
-                    <span class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/light.png" alt="Theme toggle"></span>
+                    <span class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/light.png"
+                            alt="Theme toggle"></span>
                 </div>
                 <div>
                     <p>Sprache</p>
@@ -42,7 +43,16 @@
                     <li><a href="lebenslauf.html">Lebenslauf</a></li>
                     <li><a href="partner-projekte.html">Vergangene Partner und Projekte</a></li>
                     <li><a href="referenzen.html">Referenzen</a></li>
-                    <li><a class="active" href="about-me.html">Über mich</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="active" href="about-me.html">Über mich</a>
+                            <div class="dropdown-content">
+                                <a href="gaming.html">Gaming</a>
+                                <a href="filme.html">Filme</a>
+                                <a href="musik.html">Musik</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <div id="myNav" class="overlay">
@@ -52,26 +62,40 @@
                     <a href="lebenslauf.html">Lebenslauf</a>
                     <a href="partner-projekte.html">Vergangene Partner und Projekte</a>
                     <a href="referenzen.html">Referenzen</a>
-                    <a href="about-me.html">Über mich</a>
+                    <a class="dropdown" href="about-me.html">Über mich</a>
+                    <div class="lesser">
+                        <a class="lesser" href="gaming.html">Gaming</a>
+                        <a class="lesser" href="filme.html">Filme</a>
+                        <a class="lesser" href="musik.html">Musik</a>
+                    </div>
                 </div>
             </div>
-        </div>
         <main>
             <div class="who">
-                <h2>Wer ist Xenoreaper?</h2>
-                <p>Hallo! Mein Name ist Xenoreaper und ich bin nicht nur ein begeisterter Informatiker und YouTuber, sondern habe auch eine Menge Hobbys und Sachen, die ich gerne mit anderen teile.</p>
-                <p>In meiner Freizeit beschäftige ich mich gerne mit Musik und spiele mehrere Instrumente wie Gitarre, Klavier und Schlagzeug. Ich höre auch gerne Musik und meine Lieblingsbands sind Muse, Radiohead und Coldplay. Ich bin auch ein großer Filmfan und schaue gerne Filme aller Genres. Meine Lieblingsfilme sind The Godfather, Star Wars Das Imperium schlägt zurück und Inception.</p>
-                <p>Ich reise auch gerne und erkunde neue Orte. Ich habe bereits einige Länder wie Japan, Neuseeland und Kanada besucht und es gibt noch so viele andere Orte, die ich gerne besuchen würde. Ich genieße es, neue Kulturen kennenzulernen und neue Erfahrungen zu sammeln.</p>
-                <p>In meiner Freizeit verbringe ich auch viel Zeit damit, Spiele zu spielen. Ich bin ein großer Fan von Videospielen und Brettspielen. Meine Lieblingsspiele sind The Legend of Zelda: Ocarina of Time, Final Fantasy VII und Settlers of Catan.</p>
-                <p>Ich liebe es, verschiedene Gerichte auszuprobieren und zu genießen, aber wenn ich mich entscheiden müsste, würde ich sagen, dass meine drei Lieblingsessen Linsen mit Spätzle, Sushi und indisches Curry sind. Die schwäbische Küche, zu der Linsen und Spätzle gehören, ist ein fester Bestandteil meiner Kindheitserinnerungen und ich kann einfach nicht widerstehen, wenn ich irgendwo Linsen mit Spätzle auf der Speisekarte sehe. Sushi dagegen ist ein kulinarischer Genuss, den ich gerne mit Freunden teile und bei dem ich immer wieder neue Geschmacksrichtungen entdecke. Und wenn ich nach einer schnellen und einfachen Option suche, dann ist Pizza immer meine go-to Wahl.</p>
-                <p>Ich hoffe, du haben einen besseren Einblick in meine Hobbys und Lieblingssachen bekommen und ich freue mich darauf, diese Leidenschaften mit anderen zu teilen.</p>
+                <div class="text-div">
+                    <h2>Wer ist Xenoreaper?</h2>
+                    <p>Hallo! Mein Name ist Xenoreaper und ich bin nicht nur ein begeisterter Informatiker und YouTuber, sondern habe auch eine Menge Hobbys und Sachen, die ich gerne mit anderen teile.</p>
+                    <p>In meiner Freizeit beschäftige ich mich gerne mit Musik und spiele mehrere Instrumente wie Gitarre, Klavier und Schlagzeug. Ich höre auch gerne Musik und meine Lieblingsbands sind Linkin Park, Metallica und NEFFEX. Ich bin auch ein großer Filmfan und schaue gerne Filme aller Genres. Meine Lieblingsfilme sind The Godfather, Star Wars Das Imperium schlägt zurück und Inception.</p>
+                    <p>Ich reise auch gerne und erkunde neue Orte. Ich habe bereits einige Länder wie Japan, Neuseeland und Kanada besucht und es gibt noch so viele andere Orte, die ich gerne besuchen würde. Ich genieße es, neue Kulturen kennenzulernen und neue Erfahrungen zu sammeln.</p>
+                    <p>In meiner Freizeit verbringe ich auch viel Zeit damit, Spiele zu spielen. Ich bin ein großer Fan von Videospielen und Brettspielen. Meine Lieblingsspiele sind The Sea of Thieves, ARK: Survival Evolved und Starcraft 2.</p>
+                    <p>Ich liebe es, verschiedene Gerichte auszuprobieren und zu genießen, aber wenn ich mich entscheiden müsste, würde ich sagen, dass meine drei Lieblingsessen Linsen mit Spätzle, Sushi und indisches Curry sind. Die schwäbische Küche, zu der Linsen und Spätzle gehören, ist ein fester Bestandteil meiner Kindheitserinnerungen und ich kann einfach nicht widerstehen, wenn ich irgendwo Linsen mit Spätzle auf der Speisekarte sehe. Sushi dagegen ist ein kulinarischer Genuss, den ich gerne mit Freunden teile und bei dem ich immer wieder neue Geschmacksrichtungen entdecke. Und wenn ich nach einer schnellen und einfachen Option suche, dann ist Pizza immer meine go-to Wahl.</p>
+                    <p>Ich hoffe, du hast einen besseren Einblick in meine Hobbys und Lieblingssachen bekommen und ich freue mich darauf, diese Leidenschaften mit anderen zu teilen.</p>
+                </div>
+                <div class="image-div">
+
+                </div>
             </div>
             <div class="what">
-                <h2>Was macht Xenoreaper?</h2>
-                <p>Ich erstelle Inhalte auf verschiedenen Plattformen wie YouTube, Twitch und Instagram. Meine Inhalte umfassen hauptsächlich Gaming-Videos und -Streams, aber auch Reviews, Unboxings und Vlogs. Ich liebe es, mit meiner Community zu interagieren und mich mit anderen Gamern auszutauschen. Meine Leidenschaft für Gaming begann schon in meiner Kindheit, als ich mit meinem Vater Super Mario Bros. auf dem NES gespielt habe. Seitdem hat mich die Welt der Videospiele nicht mehr losgelassen.</p>
-                <p>Ich bin auch ein großer Fan von Technologie und Innovationen. Deshalb habe ich mich für ein Studium im Bereich Informatik entschieden, um meine Fähigkeiten als Entwickler zu verbessern und meine Kenntnisse in der Gaming-Branche zu vertiefen. Als Entwickler habe ich einige spannende Projekte realisiert, darunter auch die Entwicklung von Spielen und die Zusammenarbeit mit anderen Entwicklern.</p>
-                <p>Was mich antreibt, ist die Freude am Experimentieren und das Streben nach ständiger Verbesserung. Ich bin immer auf der Suche nach neuen Ideen und Herausforderungen, um mich selbst zu pushen und meine Fähigkeiten zu erweitern. Außerdem macht es mir unglaublich viel Spaß, anderen Menschen Freude zu bereiten und sie zu inspirieren, ihre Leidenschaften zu verfolgen und ihre Ziele zu erreichen.</p>
-                <p>Ich hoffe, dass ich durch meine Inhalte und meine Arbeit als Entwickler dazu beitragen kann, die Gaming-Community zu bereichern und Menschen zu motivieren, ihre Träume zu verfolgen.</p>
+                <div class="image-div">
+
+                </div>
+                <div class="text-div">
+                    <h2>Was macht Xenoreaper?</h2>
+                    <p>Ich erstelle Inhalte auf verschiedenen Plattformen wie YouTube, Twitch und Instagram. Meine Inhalte umfassen hauptsächlich Gaming-Videos und -Streams, aber auch Reviews, Unboxings und Vlogs. Ich liebe es, mit meiner Community zu interagieren und mich mit anderen Gamern auszutauschen. Meine Leidenschaft für Gaming begann schon in meiner Kindheit, als ich mit meinem Vater Super Mario Bros. auf dem NES gespielt habe. Seitdem hat mich die Welt der Videospiele nicht mehr losgelassen.</p>
+                    <p>Ich bin auch ein großer Fan von Technologie und Innovationen. Deshalb habe ich mich für ein Studium im Bereich Informatik entschieden, um meine Fähigkeiten als Entwickler zu verbessern und meine Kenntnisse in der Gaming-Branche zu vertiefen. Als Entwickler habe ich einige spannende Projekte realisiert, darunter auch die Entwicklung von Spielen und die Zusammenarbeit mit anderen Entwicklern.</p>
+                    <p>Was mich antreibt, ist die Freude am Experimentieren und das Streben nach ständiger Verbesserung. Ich bin immer auf der Suche nach neuen Ideen und Herausforderungen, um mich selbst zu pushen und meine Fähigkeiten zu erweitern. Außerdem macht es mir unglaublich viel Spaß, anderen Menschen Freude zu bereiten und sie zu inspirieren, ihre Leidenschaften zu verfolgen und ihre Ziele zu erreichen.</p>
+                    <p>Ich hoffe, dass ich durch meine Inhalte und meine Arbeit als Entwickler dazu beitragen kann, die Gaming-Community zu bereichern und Menschen zu motivieren, ihre Träume zu verfolgen.</p>
+                </div>
             </div>
             <div id="popup">
                 <p>Danke für dein Interesse.<br>Du wurdest erfolgreich für den Newsletter angemeldet.<br>Eine Bestätigungs E-Mail folgt in kürze.</p>
@@ -95,6 +119,9 @@
             <p>© 2023 Xenoreaper</p>
             <div class="socials">
                 <a href="https://youtube.com/@Xenoreaper" class="fa fa-youtube"></a>
+                <a href="https://youtube.com/@Xeno" class="fa fa-youtube"></a>
+                <a href="https://youtube.com/@XenBox" class="fa fa-youtube"></a>
+                <a href="https://youtu.be/xpiYozkx6xw" class="fa fa-youtube"></a>
                 <a href="https://twitter.com/@Xen0reaper" class="fa fa-twitter"></a>
                 <a href="https://linkedin.com" class="fa fa-linkedin"></a>
                 <a href="https://instagram.com/x3noreaper/" class="fa fa-instagram"></a>

@@ -28,10 +28,17 @@
     margin-top: 60px;
 }
 
+.cc-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .copyright {
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margin: 5px;
+    margin-left: 10px;
     background: rgb(50, 50, 50);
     padding-top: 5px;
     padding-bottom: 5px;
@@ -44,8 +51,8 @@
 .cc-link {
     color: rgb(230, 230, 230);
     text-decoration: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .cc-part1 {
@@ -55,7 +62,11 @@
 
 .cc-part2 {
     margin-top: 0;
-    color: rgb(175, 175, 175)
+    color: rgb(175, 175, 175);
+}
+
+.cc3 {
+    color: rgb(175, 175, 175);
 }
 
 .cc-parts {
@@ -64,8 +75,18 @@
     flex-wrap: wrap;
 }
 
+.cc-size-arrow {
+    font-size: 35px;
+}
+
 .fa-chevron-right {
     margin-right: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+    #validator-warning {
+    width: 100%;
+}
 }
 
 @media only screen and (max-width: 450px) {

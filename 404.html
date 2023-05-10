@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Homepage</title>
+        <title>Referenzen</title>
         <link rel="icon" type="resources/xeno.ico" href="resources/xeno-icon.png">
         <link rel="stylesheet" href="style/main.css">
         <link rel="stylesheet" href="style/navbar.css">
-        <link rel="stylesheet" href="style/index.css">
+        <link rel="stylesheet" href="style/referenzen.css">
+        <link rel="stylesheet" href="style/404.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
@@ -18,41 +19,34 @@
             <div class="box">
                 <a href="index.html" title="Home"><img id="logo" src="resources/xeno.png" alt=""></a>
                 <span id="navmenu-button" class="material-symbols-outlined unselectable" onclick="openNav()">menu</span>
-                <span id="settings-icon" class="material-symbols-outlined left-margin unselectable" onclick="openSettings()">more_vert</span>
+                <span id="settings-icon" class="material-symbols-outlined left-margin unselectable"
+                    onclick="openSettings()">more_vert</span>
             </div>
             <div class="settings-popup unselectable" id="settings">
                 <div>
                     <h4>Settings</h4>
-                    <span id="close-settings-icon" class="material-symbols-outlined left-margin" onclick="closeSettings()">more_vert</span>
+                    <span id="close-settings-icon" class="material-symbols-outlined left-margin"
+                        onclick="closeSettings()">more_vert</span>
                 </div>
                 <hr>
                 <div class="appearance-setting">
                     <p>Darstellung</p>
-                    <span class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/light.png"
-                            alt="Theme toggle"></span>
+                    <span class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/light.png" alt="Theme toggle"></span>
                 </div>
                 <div>
                     <p>Sprache</p>
+                    <p class="selected_lang">DE | EN</p>
                 </div>
             </div>
         </header>
         <div> <!-- Navigation -->
             <nav id="navbar">
                 <ul>
-                    <li><a class="active" href="index.html">Start</a></li>
+                    <li><a href="index.html">Start</a></li>
                     <li><a href="lebenslauf.html">Lebenslauf</a></li>
                     <li><a href="partner-projekte.html">Vergangene Partner und Projekte</a></li>
                     <li><a href="referenzen.html">Referenzen</a></li>
-                    <li>
-                        <div class="dropdown">
-                            <a href="about-me.html">Über mich</a>
-                            <div class="dropdown-content">
-                                <a href="gaming.html">Gaming</a>
-                                <a href="filme.html">Filme</a>
-                                <a href="musik.html">Musik</a>
-                            </div>
-                        </div>
-                    </li>
+                    <li><a href="about-me.html">Über mich</a></li>
                 </ul>
             </nav>
             <div id="myNav" class="overlay">
@@ -62,19 +56,19 @@
                     <a href="lebenslauf.html">Lebenslauf</a>
                     <a href="partner-projekte.html">Vergangene Partner und Projekte</a>
                     <a href="referenzen.html">Referenzen</a>
-                    <a class="dropdown" href="about-me.html">Über mich</a>
-                    <div class="lesser">
-                        <a class="lesser" href="gaming.html">Gaming</a>
-                        <a class="lesser" href="filme.html">Filme</a>
-                        <a class="lesser" href="musik.html">Musik</a>
-                    </div>
+                    <a href="about-me.html">Über mich</a>
                 </div>
             </div>
         </div>
         <main>
-            <h1 class="centerText" id="main-title">Willkommen auf der Portfolio Website von Xenoreaper!</h1>
-            <p>Auf dieser Portfolioseite finden Sie eine Auswahl meiner Projekte, von denen ich glaube, dass sie meine Fähigkeiten und Interessen am besten widerspiegeln. Ich hoffe, dass Sie inspiriert werden und vielleicht sogar daran interessiert sind, mit mir zusammenzuarbeiten oder Teil meiner Community zu werden.</p>
-            <a id="back-to-top" class="fa fa-chevron-up" href="#" title="Back to top"></a>
+            <h1>Mir scheint du wolltest eigentlich woanders hin, versuch doch eine der Seiten:</h1>
+            <div class="buttons">
+                <a class="return-button" href="index.html">Start</a>
+                <a class="return-button" href="lebenslauf.html">Lebenslauf</a>
+                <a class="return-button" href="partner-projekte.html">Partner und Projekte</a>
+                <a class="return-button" href="referenzen.html">Referenzen</a>
+                <a class="return-button" href="about-me.html">Über mich</a>
+            </div>
         </main>
         <footer>
             <p>© 2023 Xenoreaper</p>

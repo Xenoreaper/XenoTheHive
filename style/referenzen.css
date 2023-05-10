@@ -1,0 +1,121 @@
+strong {
+    font-size: 25px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.autor {
+    text-align: right;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "one two two three "
+        "one four five three"
+        "six four five seven"
+        "eight eight nine nine";
+    gap: 10px;
+}
+
+.grid-content {
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+    border: 5px solid #361632;
+    box-shadow: 2px 4px 16px 0px;
+}
+
+.grid-content .aussage {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+
+.grid-content .autor {
+
+}
+
+.one {
+    grid-area: one;
+    background: #A8BF8F;
+}
+
+.two {
+    grid-area: two;
+    background: #A2B8D1;
+}
+
+.three {
+    grid-area: three;
+    background: #C4B595;
+}
+
+.four {
+    grid-area: four;
+    background: #BFA3C7;
+}
+
+.five {
+    grid-area: five;
+    background: #B1B1B1;
+}
+
+.six {
+    grid-area: six;
+    background: #BFD7EA;
+}
+
+.seven {
+    grid-area: seven;
+    background: #D9B9B9;
+}
+
+.eight {
+    grid-area: eight;
+    background: #D0CFAA;
+}
+
+.nine {
+    grid-area: nine;
+    background: #C4D5C8;
+}
+
+@media only screen and (max-width: 900px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "one two two"
+            "one three three"
+            "four five six"
+            "four seven eight"
+            "nine nine eight";
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 666px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "one two"
+            "one three"
+            "four four"
+            "five six"
+            "seven eight"
+            "nine eight";
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+}

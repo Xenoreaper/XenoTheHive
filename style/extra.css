@@ -1,0 +1,84 @@
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h6 {
+    font-size: 50px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+main p {
+    font-size: 20px;
+}
+
+img {
+    max-width: 50%;
+}
+
+.band {
+    max-width: 50%;
+}
+
+.mov {
+    max-width: 50%;
+}
+
+.review {
+    margin-left: 15%;
+    margin-right: 25%;
+}
+
+.fav-head {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.fav-head h4 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fav {
+    display: flex;
+    flex-direction: row;
+}
+
+.center-text {
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .band {
+        max-width: 75%;
+    }
+
+    .game {
+        max-width: 100%;
+    }
+
+    .review {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .band {
+        max-width: 100%;
+    }
+    
+    .mov {
+        max-width: 100%;
+    }
+}

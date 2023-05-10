@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming</title>
+    <link rel="icon" type="resources/xeno-icon.ico" href="resources/xeno-icon.png">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/extra.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <script src="scripts/main.js"></script>
+</head>
+<body onload="matchTheme()">
+    <header>
+        <div class="box">
+            <a href="index.html" title="Home"><img id="logo" src="resources/xeno.png" alt=""></a>
+            <span id="navmenu-button" class="material-symbols-outlined unselectable" onclick="openNav()">menu</span>
+            <span id="settings-icon" class="material-symbols-outlined left-margin unselectable" onclick="openSettings()">more_vert</span>
+        </div>
+        <div class="settings-popup unselectable" id="settings">
+            <div>
+                <h4>Settings</h4>
+                <span id="close-settings-icon" class="material-symbols-outlined left-margin"
+                    onclick="closeSettings()">more_vert</span>
+            </div>
+            <hr>
+            <div class="appearance-setting">
+                <p>Darstellung</p>
+                <span class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/light.png" alt="Theme toggle"></span>
+            </div>
+            <div>
+                <p>Sprache</p>
+            </div>
+        </div>
+    </header>
+    <div> <!-- Navigation -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="lebenslauf.html">Lebenslauf</a></li>
+                <li><a href="partner-projekte.html">Vergangene Partner und Projekte</a></li>
+                <li><a href="referenzen.html">Referenzen</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="sub-active" href="about-me.html">Über mich</a>
+                        <div class="dropdown-content">
+                            <a href="gaming.html">Gaming</a>
+                            <a href="filme.html">Filme</a>
+                            <a href="musik.html">Musik</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Start</a>
+                <a href="lebenslauf.html">Lebenslauf</a>
+                <a href="partner-projekte.html">Vergangene Partner und Projekte</a>
+                <a href="referenzen.html">Referenzen</a>
+                <a class="dropdown" href="about-me.html">Über mich</a>
+                <div class="lesser">
+                    <a class="lesser" href="gaming.html">Gaming</a>
+                    <a class="lesser" href="filme.html">Filme</a>
+                    <a class="lesser" href="musik.html">Musik</a>
+                </div>
+            </div>
+        </div>
+    <main>
+        <div>
+            <h1 class="center-text">Filme</h1>
+            <p>Ich liebe Filme, seit ich ein kleines Kind war. Sie sind für mich mehr als nur eine Form der Unterhaltung. Filme sind Kunstwerke, die eine Geschichte erzählen und uns mit auf eine Reise nehmen können. Jedes Mal, wenn ich einen neuen Film anschaue, tauche ich in eine andere Welt ein und erlebe eine Vielzahl von Emotionen.</p>
+            <p>Filme haben auch eine einzigartige Kraft, uns zu inspirieren und uns dazu zu bringen, über die Welt und unser Leben nachzudenken. Sie können uns neue Perspektiven und Einsichten geben, unsere Fantasie anregen und uns motivieren, unsere Träume zu verfolgen. Ich liebe es auch, mit Freunden und Familie über Filme zu sprechen und unsere Gedanken und Gefühle auszutauschen. Alles in allem ist das Kino eine wichtige und wunderbare Art, die Welt zu erkunden und uns als Menschen zu verbinden.</p>
+        </div>
+        <div>
+            <h2 class="center-text">Favoriten</h2>
+            <div class="fav">
+                <h6>1.</h6>
+                <div>
+                    <div class="fav-head">
+                        <h4>Star Wars<br>Das Imperium schlägt zurück</h4>
+                        <img class="mov" src="https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" alt="">
+                    </div>
+                    <p class="review">Ich bin mit der Originaltrilogie aufgewachsen und für mich ist Das Imperium schlägt zurück der beste Teil der Saga. Die Atmosphäre des Films ist so düster und bedrohlich, und man spürt von Anfang an, dass die Rebellen in großer Gefahr sind. Die Charaktere werden tiefer und komplexer entwickelt, besonders Han Solo und Prinzessin Leia. Aber was den Film wirklich für mich auszeichnet, ist der Bösewicht. Darth Vader ist einfach ikonisch, seine Präsenz und sein Charisma sind unvergleichlich. Aber in diesem Film zeigt er auch eine menschliche Seite und man beginnt zu verstehen, warum er so geworden ist, wie er ist. Das Ende des Films ist dann einfach legendär und hat mich als Kind in Staunen versetzt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fav">
+                <h6>2.</h6>
+                <div>
+                    <div class="fav-head">
+                        <h4>The Godfather</h4>
+                        <img class="mov" src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" alt="">
+                    </div>
+                    <p class="review">The Godfather ist einer meiner Lieblingsfilme, weil er so viel Tiefe und Komplexität hat. Die Charaktere sind alle so faszinierend und vielschichtig, dass ich mich jedes Mal aufs Neue in ihre Geschichten und Motive vertiefe. Ich liebe auch die Atmosphäre des Films, die mich direkt in das düstere New York der 1940er und 50er Jahre versetzt. Die Musik und die Kameraarbeit tragen ebenfalls dazu bei, dass ich immer wieder in den Bann des Films gezogen werde. Alles in allem ist The Godfather ein Meisterwerk des Filmemachens und ich kann ihn immer wieder anschauen, ohne dass er je an Wirkung verliert. Ich denke, was The Godfather wirklich auszeichnet, ist seine moralische Komplexität. Jeder Charakter hat seine eigene Vorstellung von Richtig und Falsch, und der Film zeigt, wie schwierig es ist, in einer Welt voller Gewalt und Korruption eine klare Linie zu ziehen. Die Schauspieler sind alle fantastisch, besonders Marlon Brando als Don Vito Corleone. Ich liebe auch die Dialoge und das Drehbuch, die immer wieder für überraschende Wendungen sorgen. The Godfather ist ein Film, der mich jedes Mal zum Nachdenken anregt und mich auf so viele verschiedene Arten berührt.</p>
+                </div>
+            </div>
+            <div class="fav">
+                <h6>3.</h6>
+                <div>
+                    <div class="fav-head">
+                        <h4>Inception</h4>
+                        <img class="mov" src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg" alt="">
+                    </div>
+                    <p class="review">Inception ist ein Film, der mich immer wieder zum Nachdenken bringt. Die Idee, in Träume einzudringen und dort Gedanken zu manipulieren, ist so faszinierend und kreativ. Aber der Film wäre nichts ohne seine Charaktere. Leonardo DiCaprio als Cobb ist so einzigartig und mysteriös, und man spürt sofort, dass er eine schwere Last mit sich trägt. Die Beziehung zwischen ihm und seiner verstorbenen Frau Mal ist so tragisch und emotional. Aber auch die anderen Mitglieder seines Teams sind interessant und haben ihre eigenen Geschichten. Die Action- und Verfolgungsszenen sind unglaublich choreografiert und ich liebe es, wie der Film zwischen verschiedenen Traumebenen hin- und herspringt. Inception ist für mich ein Meisterwerk der modernen Filmkunst.</p>
+                </div>
+            </div>
+        </div>
+        <a id="back-to-top" class="fa fa-chevron-up" href="#" title="Back to top"></a>
+    </main>
+    <footer>
+        <p>© 2023 Xenoreaper</p>
+        <div class="socials">
+            <a href="https://youtube.com/@Xenoreaper" class="fa fa-youtube"></a>
+            <a href="https://youtube.com/@Xeno" class="fa fa-youtube"></a>
+            <a href="https://youtube.com/@XenBox" class="fa fa-youtube"></a>
+            <a href="https://youtu.be/xpiYozkx6xw" class="fa fa-youtube"></a>
+            <a href="https://twitter.com/@Xen0reaper" class="fa fa-twitter"></a>
+            <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+            <a href="https://instagram.com/x3noreaper/" class="fa fa-instagram"></a>
+            <a href="https://twitch.tv/xen0reaper" class="fa fa-twitch"></a>
+        </div>
+        <a id="footer-impressum" href="impressum.html">Impressum</a>
+    </footer>
+</body>
+
+</html>

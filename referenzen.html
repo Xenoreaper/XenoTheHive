@@ -3,25 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Website</title>
+        <title>Referenzen</title>
         <link rel="icon" type="resources/xeno.ico" href="resources/xeno-icon.png">
         <link rel="stylesheet" href="style/main.css">
         <link rel="stylesheet" href="style/navbar.css">
+        <link rel="stylesheet" href="style/referenzen.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
         <script src="scripts/main.js"></script>
     </head>
     <body onload="matchTheme()">
         <header>
             <div class="box">
                 <a href="index.html" title="Home"><img id="logo" src="resources/xeno.png" alt=""></a>
-                <span id="navmenu-button" class="unselectable" onclick="openNav()">&#9776;</span>
-                <span id="settings-icon" class="fa fa-ellipsis unselectable" onclick="openSettings()">&#xf142;</span>
+                <span id="navmenu-button" class="material-symbols-outlined unselectable" onclick="openNav()">menu</span>
+                <span id="settings-icon" class="material-symbols-outlined left-margin unselectable" onclick="openSettings()">more_vert</span>
             </div>
             <div class="settings-popup unselectable" id="settings">
                 <div>
                     <h4>Settings</h4>
-                    <span id="close-settings-icon" class="fa fa-ellipsis" onclick="closeSettings()">&#xf141;</span>
+                    <span id="close-settings-icon" class="material-symbols-outlined left-margin" onclick="closeSettings()">more_vert</span>
                 </div>
                 <hr>
                 <div class="appearance-setting">
@@ -30,6 +33,7 @@
                 </div>
                 <div>
                     <p>Sprache</p>
+                    <p class="selected_lang">DE | </p><a href="en/">EN</a>
                 </div>
             </div>
         </header>
@@ -40,7 +44,16 @@
                     <li><a href="lebenslauf.html">Lebenslauf</a></li>
                     <li><a href="partner-projekte.html">Vergangene Partner und Projekte</a></li>
                     <li><a class="active" href="referenzen.html">Referenzen</a></li>
-                    <li><a href="about-me.html">Über mich</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="about-me.html">Über mich</a>
+                            <div class="dropdown-content">
+                                <a href="gaming.html">Gaming</a>
+                                <a href="filme.html">Filme</a>
+                                <a href="musik.html">Musik</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <div id="myNav" class="overlay">
@@ -50,17 +63,63 @@
                     <a href="lebenslauf.html">Lebenslauf</a>
                     <a href="partner-projekte.html">Vergangene Partner und Projekte</a>
                     <a href="referenzen.html">Referenzen</a>
-                    <a href="about-me.html">Über mich</a>
+                    <a class="dropdown" href="about-me.html">Über mich</a>
+                    <div class="lesser">
+                        <a class="lesser" href="gaming.html">Gaming</a>
+                        <a class="lesser" href="filme.html">Filme</a>
+                        <a class="lesser" href="musik.html">Musik</a>
+                    </div>
                 </div>
             </div>
         </div>
         <main>
-
+            <div class="grid">
+                <div class="one grid-content">
+                    <p class="aussage"><strong>"</strong>Ich hatte das Vergnügen, mit Xenoreaper an einem Datenanalyseprojekt zu arbeiten. Seine Fähigkeit, komplexe Daten zu strukturieren und zu analysieren, war beeindruckend. Seine Arbeit half uns, wichtige Erkenntnisse zu gewinnen und Entscheidungen zu treffen, die unser Geschäftswachstum förderten.<strong>"</strong></p>
+                    <p class="autor">― CEO von NovaTech Solutions</p>
+                </div>
+                <div class="two grid-content">
+                    <p class="aussage"><strong>"</strong>Xenoreaper war ein unschätzbares Mitglied unseres Teams, als er uns bei der Erstellung einer Website für unsere Organisation half. Sein Verständnis für Design und Funktionalität war herausragend und er arbeitete hart daran, sicherzustellen, dass unser Zielgruppenbedürfnisse erfüllt wurden.<strong>"</strong></p>
+                    <p class="autor">― Tom Johnson, Geschäftsführer von BMW Group</p>
+                </div>
+                <div class="three grid-content">
+                    <p class="aussage"><strong>"</strong>Als ich meine Website von Xenoreaper entwickeln ließ, war ich von seiner Professionalität und Kreativität beeindruckt. Er hat sich Zeit genommen, um meine Bedürfnisse zu verstehen und das Ergebnis hat meine Erwartungen übertroffen.<strong>"</strong></p>
+                    <p class="autor">― Jane Smith</p>
+                </div>
+                <div class="four grid-content">
+                    <p class="aussage"><strong>"</strong>Während seines Studiums an der Technischen Universität München hat Xenoreaper durch seine Fähigkeiten und sein Engagement in verschiedenen Projekten herausgestochen. Wir waren beeindruckt von seinem Wissen und seiner Fähigkeit, komplexe Probleme zu lösen.<strong>"</strong></p>
+                    <p class="autor">― Prof. Dr. Max Mustermann, Technische Universität München</p>
+                </div>
+                <div class="five grid-content">
+                    <p class="aussage"><strong>"</strong>Wir haben Xenoreaper als Teil unseres Entwicklungsteams für unsere mobile App eingesetzt. Seine Fähigkeit, effektiv zu kommunizieren und schnell auf Änderungen zu reagieren, machte ihn zu einem wichtigen Teil unseres Erfolgs.<strong>"</strong></p>
+                    <p class="autor">― John Doe, Vorgesetzter bei BlueTech Corporation</p>
+                </div>
+                <div class="six grid-content">
+                    <p class="aussage"><strong>"</strong>Ich hatte das Vergnügen, mit Xenoreaper an einem Game Jam teilzunehmen und war beeindruckt von seiner Kreativität und seinem Teamgeist. Er hat dazu beigetragen, dass wir unser Spiel erfolgreich präsentieren konnten.<strong>"</strong></p>
+                    <p class="autor">― Sarah Lee, Teamkollegin bei Game Jam</p>
+                </div>
+                <div class="seven grid-content">
+                    <p class="aussage"><strong>"</strong>Wir haben Xenoreaper bei der Gestaltung und Entwicklung unserer E-Commerce-Plattform engagiert. Seine Fähigkeit, unsere Anforderungen zu verstehen und ein visuell ansprechendes Design zu erstellen, war bemerkenswert.<strong>"</strong></p>
+                    <p class="autor">― CEO von Elektro Günther</p>
+                </div>
+                <div class="eight grid-content">
+                    <p class="aussage"><strong>"</strong>Ich habe Xenoreaper während seines Studiums an der Technischen Universität München kennengelernt und wir haben an verschiedenen Projekten zusammen gearbeitet. Er hat stets hervorragende Arbeit geleistet und war ein verlässlicher und motivierender Teamkollege.<strong>"</strong></p>
+                    <p class="autor">― Emily Green, ehemalige Kommilitonin an der Technischen Universität München</p>
+                </div>
+                <div class="nine grid-content">
+                    <p class="aussage"><strong>"</strong>Xenoreaper war ein ausgezeichneter Tutor, als ich seinen Informatikkurs besuchte. Seine Fähigkeit, technische Konzepte auf eine klare und präzise Weise zu erklären, war sehr hilfreich und half mir, meine Kenntnisse und Fähigkeiten zu verbessern.<strong>"</strong></p>
+                    <p class="autor">― Ehemaliger Student der Technischen Universität München</p>
+                </div>
+            </div>
+            <a id="back-to-top" class="fa fa-chevron-up" href="#" title="Back to top"></a>
         </main>
         <footer>
             <p>© 2023 Xenoreaper</p>
             <div class="socials">
                 <a href="https://youtube.com/@Xenoreaper" class="fa fa-youtube"></a>
+                <a href="https://youtube.com/@Xeno" class="fa fa-youtube"></a>
+                <a href="https://youtube.com/@XenBox" class="fa fa-youtube"></a>
+                <a href="https://youtu.be/xpiYozkx6xw" class="fa fa-youtube"></a>
                 <a href="https://twitter.com/@Xen0reaper" class="fa fa-twitter"></a>
                 <a href="https://linkedin.com" class="fa fa-linkedin"></a>
                 <a href="https://instagram.com/x3noreaper/" class="fa fa-instagram"></a>

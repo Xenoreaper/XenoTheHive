@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming</title>
+    <link rel="icon" type="resources/xeno-icon.ico" href="resources/xeno-icon.png">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/extra.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <script src="scripts/main.js"></script>
+</head>
+<body onload="matchTheme()">
+    <header>
+        <div class="box">
+            <a href="index.html" title="Home"><img id="logo" src="resources/xeno.png" alt=""></a>
+            <span id="navmenu-button" class="material-symbols-outlined unselectable" onclick="openNav()">menu</span>
+            <span id="settings-icon" class="material-symbols-outlined left-margin unselectable" onclick="openSettings()">more_vert</span>
+        </div>
+        <div class="settings-popup unselectable" id="settings">
+            <div>
+                <h4>Settings</h4>
+                <span id="close-settings-icon" class="material-symbols-outlined left-margin"
+                    onclick="closeSettings()">more_vert</span>
+            </div>
+            <hr>
+            <div class="appearance-setting">
+                <p>Darstellung</p>
+                <span class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/light.png" alt="Theme toggle"></span>
+            </div>
+            <div>
+                <p>Sprache</p>
+            </div>
+        </div>
+    </header>
+    <div> <!-- Navigation -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="lebenslauf.html">Lebenslauf</a></li>
+                <li><a href="partner-projekte.html">Vergangene Partner und Projekte</a></li>
+                <li><a href="referenzen.html">Referenzen</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="sub-active" href="about-me.html">Über mich</a>
+                        <div class="dropdown-content">
+                            <a href="gaming.html">Gaming</a>
+                            <a href="filme.html">Filme</a>
+                            <a href="musik.html">Musik</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Start</a>
+                <a href="lebenslauf.html">Lebenslauf</a>
+                <a href="partner-projekte.html">Vergangene Partner und Projekte</a>
+                <a href="referenzen.html">Referenzen</a>
+                <a class="dropdown" href="about-me.html">Über mich</a>
+                <div class="lesser">
+                    <a class="lesser" href="gaming.html">Gaming</a>
+                    <a class="lesser" href="filme.html">Filme</a>
+                    <a class="lesser" href="musik.html">Musik</a>
+                </div>
+            </div>
+        </div>
+    <main>
+        <div>
+            <h1 class="center-text">Musik</h1>
+            <p>Musik ist für mich eine große Leidenschaft und ich höre sie sehr gerne, sei es zum Entspannen, zum Feiern oder zum Arbeiten. Die Vielfalt an Musikrichtungen und Künstlern ist einfach unendlich und es gibt immer wieder etwas Neues zu entdecken. Außerdem kann Musik Emotionen ausdrücken und eine ganz besondere Atmosphäre schaffen, die mich tief berühren kann.</p>
+            <p>Interessanterweise habe ich früher gar nicht selbst Musik gemacht und konnte mich auch nicht wirklich für ein bestimmtes Instrument begeistern. Erst später im Leben hat sich das geändert und ich begann, mich für das Produzieren von elektronischer Musik zu interessieren. Ich habe angefangen, mich intensiver mit Sounddesign, Mixing und Mastering auseinanderzusetzen und es macht mir immer noch viel Spaß, an neuen Tracks zu arbeiten und meine Musik mit anderen zu teilen. Es ist einfach toll zu sehen, wie Menschen auf meine Musik reagieren und sie vielleicht sogar dazu inspiriert, selbst Musik zu machen.</p>
+        </div>
+        <div>
+            <h2 class="center-text">Favoriten</h2>
+            <div class="fav">
+                <h6>1.</h6>
+                <div>
+                    <div class="fav-head">
+                        <h4>Linkin Park</h4>
+                        <img class="band" src="https://i.scdn.co/image/ab67616d00001e027cb20e0a29701a667dac3ede" alt="">
+                    </div>
+                    <p class="review">Linkin Park ist für mich eine der besten Bands aller Zeiten. Ihre Musik spricht zu mir auf so vielen Ebenen. Ich liebe ihre Mischung aus harten Gitarrenriffs und eingängigen Melodien, und die Art und Weise, wie sie ihre Texte mit kraftvollen Emotionen und Energie vermitteln, ist einfach unglaublich. Ich kann mich so leicht in ihre Songs hineinversetzen und fühle mich oft von ihren Texten inspiriert. Die Kombination aus Chester Benningtons kraftvoller Stimme und Mike Shinodas klugen Lyrics und Rap-Parts ist einfach unschlagbar. Linkin Park hat mir in so vielen schwierigen Zeiten geholfen, und ich werde für immer ein Fan bleiben.</p>
+                </div>
+            </div>
+            <div class="fav">
+                <h6>2.</h6>
+                <div>
+                    <div class="fav-head">
+                        <h4>Metallica</h4>
+                        <img class="band" src="https://i.scdn.co/image/ab67616d0000b273b273e0a4432dbcff6df50e05" alt="">
+                    </div>
+                    <p class="review">Ich bin ein großer Fan von Heavy Metal und Metallica ist für mich die ultimative Band in diesem Genre. Ihre Musik ist so kraftvoll und intensiv und ihre Gitarrenriffs sind einfach unglaublich. Ich liebe die Art und Weise, wie sie verschiedene Stile und Einflüsse in ihre Musik integrieren und wie sie es schaffen, eine so starke emotionale Wirkung zu erzielen. Metallica hat so viele klassische Songs geschrieben, die ich immer wieder gerne höre, wie "Enter Sandman", "Master of Puppets" und "One". Außerdem bewundere ich ihre Fähigkeit, sich immer wieder neu zu erfinden und innovative Musik zu schaffen, auch nach all den Jahren.</p>
+                </div>
+            </div>
+            <div class="fav">
+                <h6>3.</h6>
+                <div>
+                    <div class="fav-head">
+                        <h4>NEFFEX</h4>
+                        <img class="band" src="https://i.scdn.co/image/ab67706c0000da846145788c57b2719672055293" alt="">
+                    </div>
+                    <p class="review">NEFFEX ist eine relativ neue Band, aber ich bin schon ein großer Fan von ihnen. Ich liebe ihre Mischung aus Rock, Hip-Hop und elektronischen Elementen. Ihre Songs haben eine so positive Energie und sprechen Themen an, die für junge Leute wie mich relevant sind, wie Selbstfindung und Selbstvertrauen. Ich mag auch ihre DIY-Einstellung und wie sie es geschafft haben, ohne ein großes Label im Rücken erfolgreich zu sein. Ich denke, NEFFEX hat eine sehr aufregende Zukunft vor sich und ich freue mich darauf, ihre Karriere zu verfolgen und zu sehen, wohin sie uns als nächstes führen werden.</p>
+                </div>
+            </div>
+        </div>
+        <a id="back-to-top" class="fa fa-chevron-up" href="#" title="Back to top"></a>
+    </main>
+    <footer>
+        <p>© 2023 Xenoreaper</p>
+        <div class="socials">
+            <a href="https://youtube.com/@Xenoreaper" class="fa fa-youtube"></a>
+            <a href="https://youtube.com/@Xeno" class="fa fa-youtube"></a>
+            <a href="https://youtube.com/@XenBox" class="fa fa-youtube"></a>
+            <a href="https://youtu.be/xpiYozkx6xw" class="fa fa-youtube"></a>
+            <a href="https://twitter.com/@Xen0reaper" class="fa fa-twitter"></a>
+            <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+            <a href="https://instagram.com/x3noreaper/" class="fa fa-instagram"></a>
+            <a href="https://twitch.tv/xen0reaper" class="fa fa-twitch"></a>
+        </div>
+        <a id="footer-impressum" href="impressum.html">Impressum</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.return-button {
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+    background: rgb(120, 120, 120);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.return-button:hover {
+    background: rgb(166, 0, 0);
+    color: black;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.dark-mode .return-button {
+    background: rgb(200, 200, 200);
+    color: black;
+}
+
+.dark-mode .return-button:hover {
+    background: rgb(166, 0, 0);
+    color:rgb(230, 230, 230);
+}

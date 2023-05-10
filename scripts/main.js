@@ -1,13 +1,23 @@
+var page_folder = window.location.pathname.split("/");
+
 function toggleTheme() {
     var page = document.body;
     const button = document.getElementById("button-icon");
     page.classList.toggle("dark-mode");
     if(button.classList.contains("day")) {
-        button.src = "resources/dark.png";
+        if (page_folder[page_folder.length - 2] === "en") {
+            button.src = "../resources/dark.png";
+        } else {
+            button.src = "resources/dark.png";
+        }
         button.classList.toggle("day");
         saveDarkModeToCache(false);
     } else {
-        button.src = "resources/light.png";
+        if (page_folder[page_folder.length-2] === "en") {
+            button.src = "../resources/light.png";
+        } else {
+            button.src = "resources/light.png";
+        }
         button.classList.toggle("day");
         saveDarkModeToCache(true);
     }
@@ -42,17 +52,31 @@ function readDarkModeFromCache() {
 
 function matchTheme() {
     var isDarkMode = readDarkModeFromCache();
-  
+    
     if (!(isDarkMode === null) && (isDarkMode === "true")) {
         document.body.classList.add('dark-mode');
-        document.getElementById("button-icon").src = "resources/light.png";
-        document.getElementById("button-icon").classList.toggle("day");
+        if (!(page_folder[page_folder.length - 2] === null) && page_folder[page_folder.length - 2] === "en") {
+            document.getElementById("button-icon").src = "../resources/light.png";
+            document.getElementById("button-icon").classList.toggle("day");
+        } else {
+            document.getElementById("button-icon").src = "resources/light.png";
+            document.getElementById("button-icon").classList.toggle("day");
+        }
     } else if(!(isDarkMode === null) && !(isDarkMode === "true")) {
-        document.getElementById("button-icon").src = "resources/dark.png";
+        if (!(page_folder[page_folder.length - 2] === null) && page_folder[page_folder.length - 2] === "en") {
+            document.getElementById("button-icon").src = "../resources/dark.png";
+        } else {
+            document.getElementById("button-icon").src = "resources/dark.png";
+        }
     } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark-mode');
-        document.getElementById("button-icon").src = "resources/light.png";
-        document.getElementById("button-icon").classList.toggle("day");
+        if (!(page_folder[page_folder.length - 2] === null) && page_folder[page_folder.length - 2] === "en") {
+            document.getElementById("button-icon").src = "../resources/light.png";
+            document.getElementById("button-icon").classList.toggle("day");
+        } else {
+            document.getElementById("button-icon").src = "resources/light.png";
+            document.getElementById("button-icon").classList.toggle("day");
+        }
     }
 }
 

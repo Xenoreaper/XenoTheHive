@@ -10,25 +10,25 @@
         <link rel="stylesheet" href="style/impressum.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
         <script src="scripts/main.js"></script>
     </head>
     <body onload="matchTheme()">
         <header>
             <div class="box">
                 <a href="index.html" title="Home"><img id="logo" src="resources/xeno.png" alt=""></a>
-                <span id="navmenu-button" class="unselectable" onclick="openNav()">&#9776;</span>
-                <span id="settings-icon" class="fa fa-ellipsis unselectable" onclick="openSettings()">&#xf142;</span>
+                <span id="navmenu-button" class="material-symbols-outlined unselectable" onclick="openNav()">menu</span>
+                <span id="settings-icon" class="material-symbols-outlined left-margin unselectable" onclick="openSettings()">more_vert</span>
             </div>
             <div class="settings-popup unselectable" id="settings">
                 <div>
                     <h4>Settings</h4>
-                    <span id="close-settings-icon" class="fa fa-ellipsis" onclick="closeSettings()">&#xf141;</span>
+                    <span id="close-settings-icon" class="material-symbols-outlined left-margin" onclick="closeSettings()">more_vert</span>
                 </div>
                 <hr>
                 <div class="appearance-setting">
                     <p>Darstellung</p>
-                    <span class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/light.png"
-                            alt="Theme toggle"></span>
+                    <span class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" class="" src="resources/light.png" alt="Theme toggle"></span>
                 </div>
                 <div>
                     <p>Sprache</p>
@@ -42,7 +42,16 @@
                     <li><a href="lebenslauf.html">Lebenslauf</a></li>
                     <li><a href="partner-projekte.html">Vergangene Partner und Projekte</a></li>
                     <li><a href="referenzen.html">Referenzen</a></li>
-                    <li><a href="about-me.html">Über mich</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="about-me.html">Über mich</a>
+                            <div class="dropdown-content">
+                                <a href="gaming.html">Gaming</a>
+                                <a href="filme.html">Filme</a>
+                                <a href="musik.html">Musik</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <div id="myNav" class="overlay">
@@ -52,10 +61,14 @@
                     <a href="lebenslauf.html">Lebenslauf</a>
                     <a href="partner-projekte.html">Vergangene Partner und Projekte</a>
                     <a href="referenzen.html">Referenzen</a>
-                    <a href="about-me.html">Über mich</a>
+                    <a class="dropdown" href="about-me.html">Über mich</a>
+                    <div class="lesser">
+                        <a class="lesser" href="gaming.html">Gaming</a>
+                        <a class="lesser" href="filme.html">Filme</a>
+                        <a class="lesser" href="musik.html">Musik</a>
+                    </div>
                 </div>
             </div>
-        </div>
         <main>
             <div class="wichtig">
                 <h2>Hinweis:</h2>
@@ -67,32 +80,65 @@
             </div>
             <div class="section">
                 <h2>Anbieter:</h2>
-                <p>Xenoreaper<br>Straße 69<br>12345 Stadt</p>
-                <p>Telefon: 123456789<br>E-Mail: xenoreaper@gmail.com</p>
+                <p>Xenoreaper<br>Lilienweg 11<br>54321 Dorfstadt</p>
+                <p>Telefon: +49 174 8275568<br>E-Mail: xenoreaper@gmail.com</p>
                 <p>Umsatzsteuer-ID-Nr.: DE 435685918</p>
             </div>
             <div class="section">
-                <h2>Copyright:</h2>
-                <p>Copyright 2023 Xenoreaper</p>
+                <div class="personal-cc">
+                    <h2>Copyright:</h2>
+                    <p>Copyright © 2023 Xenoreaper</p>
+                    <p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
+                    <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+                    <p>You should have received a copy of the GNU General Public License along with this program. If not, see <a href="http://www.gnu.org/licenses">http://www.gnu.org/licenses</a>.</p>
+                    <a class="cc-link" href="https://raw.githubusercontent.com/Xenoreaper/XenoTheHive/main/LICENSE">
+                        <div class="copyright">
+                            <div class="cc-parts">
+                                <p class="cc3">License: GNU General Public License v3.0</p>
+                            </div>
+                            <p class="material-symbols-outlined cc-size-arrow">chevron_right</p>
+                        </div>
+                    </a>
+                </div>
                 <h3>Die folgenden Open-Source-Bibliotheken wurden für diese Seite verwendet:</h3>
-                <a class="cc-link" href="https://raw.githubusercontent.com/googlefonts/roboto/main/LICENSE">
-                    <div class="copyright">
-                        <div class="cc-parts">
-                            <p class="cc-part1">@googlefonts/roboto@2.138</p>
-                            <p class="cc-part2">License: Apache Version 2.0</p>
+                <div class="cc-list">
+                    <a class="cc-link" href="https://raw.githubusercontent.com/googlefonts/roboto/main/LICENSE">
+                        <div class="copyright">
+                            <div class="cc-parts">
+                                <p class="cc-part1">@googlefonts/roboto@2.138</p>
+                                <p class="cc-part2">License: Apache Version 2.0</p>
+                            </div>
+                            <p class="material-symbols-outlined cc-size-arrow">chevron_right</p>
                         </div>
-                        <p class="fa fa-chevron-right"></p>
-                    </div>
-                </a>
-                <a class="cc-link" href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/LICENSE.txt">
-                    <div class="copyright">
-                        <div class="cc-parts">
-                            <p class="cc-part1">@FortAwesome/Font-Awesome@6.4.0</p>
-                            <p class="cc-part2">License: CC BY 4.0</p>
+                    </a>
+                    <a class="cc-link" href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/LICENSE.txt">
+                        <div class="copyright">
+                            <div class="cc-parts">
+                                <p class="cc-part1">@FortAwesome/Font-Awesome@6.4.0</p>
+                                <p class="cc-part2">License: CC BY 4.0</p>
+                            </div>
+                            <p class="cc-size-arrow material-symbols-outlined">chevron_right</p>
                         </div>
-                        <p class="fa fa-chevron-right"></p>
-                    </div>
-                </a>
+                    </a>
+                    <a class="cc-link" href="https://raw.githubusercontent.com/google/material-design-icons/master/LICENSE">
+                        <div class="copyright">
+                            <div class="cc-parts">
+                                <p class="cc-part1">@google/material-design-icons@4.0.0</p>
+                                <p class="cc-part2">License: Apache Version 2.0</p>
+                            </div>
+                            <p class="cc-size-arrow material-symbols-outlined">chevron_right</p>
+                        </div>
+                    </a>
+                    <a class="cc-link" href="https://raw.githubusercontent.com/impallari/DancingScript/master/OFL.txt">
+                        <div class="copyright">
+                            <div class="cc-parts">
+                                <p class="cc-part1">@impallari/DancingScript@1.002</p>
+                                <p class="cc-part2">License: SIL Open Font License 1.1</p>
+                            </div>
+                            <p class="cc-size-arrow material-symbols-outlined">chevron_right</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             <a id="back-to-top" class="fa fa-chevron-up" href="#" title="Back to top"></a>
         </main>
@@ -100,6 +146,9 @@
             <p>© 2023 Xenoreaper</p>
             <div class="socials">
                 <a href="https://youtube.com/@Xenoreaper" class="fa fa-youtube"></a>
+                <a href="https://youtube.com/@Xeno" class="fa fa-youtube"></a>
+                <a href="https://youtube.com/@XenBox" class="fa fa-youtube"></a>
+                <a href="https://youtu.be/xpiYozkx6xw" class="fa fa-youtube"></a>
                 <a href="https://twitter.com/@Xen0reaper" class="fa fa-twitter"></a>
                 <a href="https://linkedin.com" class="fa fa-linkedin"></a>
                 <a href="https://instagram.com/x3noreaper/" class="fa fa-instagram"></a>
