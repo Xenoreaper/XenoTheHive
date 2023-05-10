@@ -34,7 +34,7 @@
                     <span class="dropbtn dark-mode-button" onclick="toggleTheme()"><img id="button-icon" class="dropbtn" src="resources/light.png" alt="Theme toggle"></span>
                 </div>
                 <div class="dropbtn">
-                    <p class="dropbtn">Sprache</p>
+                    <p id="language" class="dropbtn">Sprache</p>
                 </div>
             </div>
         </header>
@@ -45,7 +45,16 @@
                     <li><a href="lebenslauf.html">Lebenslauf</a></li>
                     <li><a href="partner-projekte.html">Vergangene Partner und Projekte</a></li>
                     <li><a href="referenzen.html">Referenzen</a></li>
-                    <li><a href="about-me.html">Über mich</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="about-me.html">Über mich</a>
+                            <div class="dropdown-content">
+                                <a href="gaming.html">Gaming</a>
+                                <a href="filme.html">Filme</a>
+                                <a href="musik.html">Musik</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <div id="myNav" class="overlay">
@@ -55,10 +64,14 @@
                     <a href="lebenslauf.html">Lebenslauf</a>
                     <a href="partner-projekte.html">Vergangene Partner und Projekte</a>
                     <a href="referenzen.html">Referenzen</a>
-                    <a href="about-me.html">Über mich</a>
+                    <a class="dropdown" href="about-me.html">Über mich</a>
+                    <div class="lesser hide">
+                        <a class="lesser" href="gaming.html">Gaming</a>
+                        <a class="lesser" href="filme.html">Filme</a>
+                        <a class="lesser" href="musik.html">Musik</a>
+                    </div>
                 </div>
             </div>
-        </div>
         <main>
             <img id="image-404" src="" alt="">
             <h1>Mir scheint du wolltest eigentlich woanders hin, versuch doch eine der Seiten:</h1>
