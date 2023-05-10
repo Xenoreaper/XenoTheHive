@@ -18,21 +18,22 @@
             <div class="box">
                 <a href="index.html" title="Home"><img id="logo" src="resources/xeno.png" alt=""></a>
                 <span id="navmenu-button" class="material-symbols-outlined unselectable" onclick="openNav()">menu</span>
-                <span id="settings-icon" class="material-symbols-outlined left-margin unselectable" onclick="openSettings()">more_vert</span>
+                <span id="settings-icon" class="dropbtn material-symbols-outlined left-margin unselectable" onclick="openSettings()">more_vert</span>
             </div>
-            <div class="settings-popup unselectable" id="settings">
-                <div>
-                    <h4>Settings</h4>
-                    <span id="close-settings-icon" class="material-symbols-outlined left-margin" onclick="closeSettings()">more_vert</span>
+            <div class="dropbtn settings-popup unselectable" id="settings">
+                <div class="dropbtn">
+                    <h4 class="dropbtn">Settings</h4>
+                    <span id="close-settings-icon" class="dropbtn material-symbols-outlined left-margin"
+                        onclick="closeSettings()">more_vert</span>
                 </div>
-                <hr>
-                <div class="appearance-setting">
-                    <p>Darstellung</p>
-                    <span class="dark-mode-button" onclick="toggleTheme()"><img id="button-icon" src="resources/light.png"
-                            alt="Theme toggle"></span>
+                <hr class="dropbtn">
+                <div class="dropbtn appearance-setting">
+                    <p class="dropbtn">Darstellung</p>
+                    <span class="dropbtn dark-mode-button" onclick="toggleTheme()"><img id="button-icon" class="dropbtn"
+                            src="resources/light.png" alt="Theme toggle"></span>
                 </div>
-                <div>
-                    <p>Sprache</p>
+                <div class="dropbtn">
+                    <p class="dropbtn">Sprache</p>
                 </div>
             </div>
         </header>

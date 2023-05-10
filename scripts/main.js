@@ -1,3 +1,4 @@
+//Dark Mode
 var page_folder = window.location.pathname.split("/");
 
 function toggleTheme() {
@@ -21,25 +22,6 @@ function toggleTheme() {
         button.classList.toggle("day");
         saveDarkModeToCache(true);
     }
-}
-
-function loadPage(page, title) {
-    fetch("html-additions/header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header").innerHTML = data;
-
-            var pageName = window.location.pathname.split('/').pop();
-
-            if(pageName === page) {
-                document.getElementById("header-title").innerHTML = title;
-            }
-
-            if(document.querySelector(".navbar a[href='" + pageName + "']") !== null) {
-                document.querySelector(".navbar a[href='" + pageName + "']").classList.add("active");
-            }
-            matchTheme();
-        })
 }
 
 function saveDarkModeToCache(isDarkMode) {
@@ -80,19 +62,13 @@ function matchTheme() {
     }
 }
 
+// Video Switch
 function switchVideo(index) {
     var video = ["_BIOlnhmYv0", "AGqXFlC1jp0", "oKIjS4sdVF0"]
     document.getElementById('vactive').src = "https://www.youtube.com/embed/" + video[index];
 }
 
-function openSettings() {
-    document.getElementById("settings").style.display = "block";
-}
-
-function closeSettings() {
-    document.getElementById("settings").style.display = "none";
-}
-
+// Newsletter Popup
 function newsletterPopup(event) {
     event.preventDefault();
     document.getElementById("popup").style.display = "flex";
@@ -107,6 +83,7 @@ function clearForm() {
     document.querySelector("form").reset();
 }
 
+// Smartphone Navmenu
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
 }
@@ -115,13 +92,7 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
 
-// Newsletter info im cache speichern? (boolean, string, string)
-function saveRegistrationToCache(registered, name, mail) {
-    localStorage.setItem("registered", registered);
-    localStorage.setItem("name", name);
-    localStorage.setItem("mail", mail);
-}
-
+// Scroll to top Button
 function scrollFunction() {
     var backToTopButton = document.getElementById("back-to-top");
 
@@ -135,3 +106,25 @@ function scrollFunction() {
 window.onscroll = function() {
     scrollFunction();
 };
+
+// Settings Dropdown
+function openSettings() {
+    document.getElementById("settings").classList.toggle("show");
+}
+
+function closeSettings() {
+    document.getElementById("settings").classList.toggle("show");
+}
+
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("settings-popup");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
