@@ -50,7 +50,7 @@ function matchTheme() {
         } else {
             document.getElementById("button-icon").src = "resources/dark.png";
         }
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
         document.body.classList.add('dark-mode');
         if (!(page_folder[page_folder.length - 2] === null) && page_folder[page_folder.length - 2] === "en") {
             document.getElementById("button-icon").src = "../resources/light.png";
