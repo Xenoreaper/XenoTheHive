@@ -1,105 +1,31 @@
 # XenoTheHive
 
-## Webprogrammierung Aufgabe
-### Bewertungskriterien
-* Umfang **(5 Punkte)**: mind. index-Seite, plus 3 weitere Seiten, plus Impressum, zusätzlich entsprechende Inhalte je Seite 
-* Design **(5 Punkte)**: Farben, formatierte Tabellen, schönes Menü, Fonts, Einbindung von Fotos etc. 
-* Interaktivität **(5 Punkte)**: Verlinkung der Seiten, Newsletter-Anmeldung, Anzeigen der aktuellen Zeit etc. 
-* Genutzte Elemente / Funktionen **(3 Punkte)**
-* HTML5-Korrektheit **(2 Punkte)**
-### Erfüllt
-* Umfang
-    * Index
-    * Impressum
-        * Eigene Lizenz
-        * Lizenzen der gebrauchten Imports
-    * About Me
-        * extra: Gaming
-        * extra: Filme
-        * extra: Musik
-    * Partner und Projekte
-    * Lebenslauf
-    * extra: Referenzen
-    * extra: 404
-* Design
-    * Farben
-    * formatierte Tabelle
-    * Menü
-        * Navbar (Responsive siehe Interaktivität)
-    * Fonts (Roboto)
-        * Roboto
-        * Dancing Font
-        * Icons
-            * Font Awesome
-            * Material Symbols Outlined
-    * Fotos
-        * Hintergrund auf index
-        * Video und Select auf Partner und Projekte
-        * Partner und Sponsor Icons auf Partner und Projekte
-        * Favorites auf Gaming, Musik und Filme
-    * Favicon und Titel pro Seite
-    * extra: Dark-Mode
-    * extra: Social-Media Links
-* Interaktivität
-    * Verlinkung der Seiten
-    * Dark-Mode
-        * Cache: Dark-Mode ist Seitenübergreifend
-    * Newsletter-Anmeldung
-    * iframe Videos
-        * Video durchwechselbar
-    * Back to top Button (taucht nur auf wenn man scrollt)
-    * Website vollständig Responsive (garantiert bis minimal 335px)
-        * Navbar Responsiveness: wird zu einem Button der ein Overlay Menu öffnet
-    * Über mich hover dropdown
-    * Settingsmenü
-* Genutzte Elemente
-    * form
-    * a, p
-    * img
-    * iframe
-    * h1, h2, h3
-    * header, footer
-    * link, script, title
-    * div
-    * label
-    * input
-    * button
-    * IDs, Klassen
-    * hr
-    * grid
-* HTML5-Korrektheit
-    * About Me
-    * Index
-    * Impressum
-    * Lebenslauf
-    * Partner und Projekte
-    * Referenzen
-* gehosted auf GitHub
-### To-Do
-* Interaktivität
-    * weitere Funktionen
-        * Feedback
-        * Kontakt
-    * Menu
-        * Dark-Mode
-            * Dunkel
-            * Hell
-            * Gerätedesign
-        * Sprache
-            * Englisch
-            * Deutsch
-    * ~~Uhr???~~ NEIN!
-    * Newsletter registrierung im Cache speichern?
-* Header und Footer entweder in jede HTML oder hosting
-* Impressum und DSGVO?
-    * Terms of Use?
-        * Limitation of liability
-        * Website use guidelines
-        * Definition of impermissible conduct/abuse and termination clause
-        * Governing law clause
-        * Privacy policy, if necessary
-        * Intellectual property clause
-        * Permitted use clause
-        * Information on the use of cookies
-        * Disclaimer that terms of use are subject to change
-    * Privacy Policy?
+## About this Project
+This Project started as me trying out some HTML and CSS. <br>
+I then first uploaded to GitHub when I started adding JavaScript and testing ChatGPT's capabilities. <br>
+I then picked it back up when I had to create a Portfolio Website for College.
+
+## License
+This website project is licensed under the GNU GPL V3.0. <br>
+You are free to use modify and share it in any way. <br>
+I ask you to credit me if you do though.
+
+You are relatively free in how you credit as long as it contains a link to this exact project.
+
+An example for crediting me:
+```
+<your copyright comment/notice>
+used parts of the following project:
+Copyright 2023 Xenoreaper - XenoTheHive
+License: GNU General Public License V3.0
+https://github.com/Xenoreaper/XenoTheHive
+```
+
+For a GNU GPL V3.0 the following applies:
+| Permissions | Limitations | Conditions |
+| ----------- | ----------- | ---------- |
+| ✔ Commercial use | ❌ Liability | ℹ License and copyright notice |
+| ✔ Modification | ❌ Warranty | ℹ State changes |
+| ✔ Distribution |  | ℹ Disclose source |
+| ✔ Patent use |  | ℹ Same license |
+| ✔ Private use |  |  |
