@@ -1,136 +1,136 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming</title>
-    <link rel="icon" type="resources/xeno-icon.ico" href="resources/xeno-icon.png">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/navbar.css">
-    <link rel="stylesheet" href="style/extra.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <script src="scripts/main.js"></script>
-</head>
-<body onload="matchTheme()">
-    <header>
-        <div class="box">
-            <a href="index.html" title="Home"><img id="logo" src="resources/xeno.png" alt=""></a>
-            <span id="navmenu-button" class="material-symbols-outlined unselectable" onclick="openNav()">menu</span>
-            <span id="settings-icon" class="dropbtn material-symbols-outlined left-margin unselectable" onclick="openSettings()">more_vert</span>
-        </div>
-        <div class="dropbtn settings-popup unselectable" id="settings">
-            <div class="dropbtn">
-                <h4 class="dropbtn">Settings</h4>
-                <span id="close-settings-icon" class="dropbtn material-symbols-outlined left-margin"
-                    onclick="closeSettings()">more_vert</span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gaming</title>
+        <link rel="icon" type="resources/xeno-icon.ico" href="resources/xeno-icon.png">
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/navbar.css">
+        <link rel="stylesheet" href="style/extra.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+        <script src="scripts/main.js"></script>
+    </head>
+    <body onload="matchTheme()">
+        <header>
+            <div class="box">
+                <a href="index.html" title="Home"><img id="logo" src="resources/xeno.png" alt=""></a>
+                <span id="navmenu-button" class="material-symbols-outlined unselectable" onclick="openNav()">menu</span>
+                <span id="settings-icon" class="dropbtn material-symbols-outlined left-margin unselectable" onclick="openSettings()">more_vert</span>
             </div>
-            <hr class="dropbtn">
-            <div class="dropbtn appearance-setting">
-                <p class="dropbtn">Darstellung</p>
-                <span class="dropbtn dark-mode-button" onclick="toggleTheme()"><img id="button-icon" class="dropbtn"
-                        src="resources/light.png" alt="Theme toggle"></span>
+            <div class="dropbtn settings-popup unselectable" id="settings">
+                <div class="dropbtn">
+                    <h4 class="dropbtn">Settings</h4>
+                    <span id="close-settings-icon" class="dropbtn material-symbols-outlined left-margin"
+                        onclick="closeSettings()">more_vert</span>
+                </div>
+                <hr class="dropbtn">
+                <div class="dropbtn appearance-setting">
+                    <p class="dropbtn">Darstellung</p>
+                    <span class="dropbtn dark-mode-button" onclick="toggleTheme()"><img id="button-icon" class="dropbtn"
+                            src="resources/light.png" alt="Theme toggle"></span>
+                </div>
+                <div class="dropbtn">
+                    <p id="language" class="dropbtn">Sprache</p>
+                </div>
             </div>
-            <div class="dropbtn">
-                <p id="language" class="dropbtn">Sprache</p>
-            </div>
-        </div>
-    </header>
-    <div> <!-- Navigation -->
-        <nav id="navbar">
-            <ul>
-                <li><a href="index.html">Start</a></li>
-                <li><a href="lebenslauf.html">Lebenslauf</a></li>
-                <li><a href="partner-projekte.html">Vergangene Partner und Projekte</a></li>
-                <li><a href="referenzen.html">Referenzen</a></li>
-                <li>
-                    <div class="dropdown">
-                        <a class="sub-active" href="about-me.html">Über mich</a>
-                        <div class="dropdown-content">
-                            <a href="gaming.html">Gaming</a>
-                            <a href="filme.html">Filme</a>
-                            <a href="musik.html">Musik</a>
+        </header>
+        <div> <!-- Navigation -->
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="lebenslauf.html">Lebenslauf</a></li>
+                    <li><a href="partner-projekte.html">Vergangene Partner und Projekte</a></li>
+                    <li><a href="referenzen.html">Referenzen</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="sub-active" href="about-me.html">Über mich</a>
+                            <div class="dropdown-content">
+                                <a href="gaming.html">Gaming</a>
+                                <a href="filme.html">Filme</a>
+                                <a href="musik.html">Musik</a>
+                            </div>
                         </div>
+                    </li>
+                </ul>
+            </nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Start</a>
+                    <a href="lebenslauf.html">Lebenslauf</a>
+                    <a href="partner-projekte.html">Vergangene Partner und Projekte</a>
+                    <a href="referenzen.html">Referenzen</a>
+                    <a class="dropdown" href="about-me.html">Über mich</a>
+                    <div class="lesser">
+                        <a class="lesser" href="gaming.html">Gaming</a>
+                        <a class="lesser" href="filme.html">Filme</a>
+                        <a class="lesser" href="musik.html">Musik</a>
                     </div>
-                </li>
-            </ul>
-        </nav>
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="index.html">Start</a>
-                <a href="lebenslauf.html">Lebenslauf</a>
-                <a href="partner-projekte.html">Vergangene Partner und Projekte</a>
-                <a href="referenzen.html">Referenzen</a>
-                <a class="dropdown" href="about-me.html">Über mich</a>
-                <div class="lesser">
-                    <a class="lesser" href="gaming.html">Gaming</a>
-                    <a class="lesser" href="filme.html">Filme</a>
-                    <a class="lesser" href="musik.html">Musik</a>
                 </div>
             </div>
         </div>
-    <main>
-        <div>
-            <h1 class="center-text">Videospiele</h1>
-            <p>Ich habe mich schon immer von Videospielen faszinieren lassen. Es ist erstaunlich, wie sie es schaffen, eine Welt voller Abenteuer und Fantasie zu erschaffen, in die man eintauchen und die man selbst erleben kann. Videospiele sind für mich nicht nur ein unterhaltsames Hobby, sondern auch ein Ort, an dem ich mich entspannen und meiner Kreativität freien Lauf lassen kann.</p>
-            <p>Besonders reizen mich Spiele, die eine tiefe und fesselnde Handlung haben, die mich mit ihren Charakteren und der Welt, in der sie leben, mitreißen können. Aber auch Spiele, die es mir ermöglichen, meine Fähigkeiten und Strategien zu verbessern, haben einen besonderen Reiz für mich. Es gibt einfach nichts Besseres, als die Herausforderung anzunehmen und zu versuchen, immer besser zu werden.</p>
-            <p>Ich glaube, dass Spiele uns auch viel über uns selbst und unsere Umwelt lehren können. Sie können uns dabei helfen, Probleme auf eine neue Art und Weise zu betrachten und uns wertvolle Fähigkeiten beibringen, wie zum Beispiel Zusammenarbeit, Zielorientierung und Durchhaltevermögen. Darüber hinaus ermöglichen uns Videospiele, mit anderen Menschen aus der ganzen Welt zu interagieren und Freundschaften zu knüpfen, die sonst vielleicht nie entstanden wären.</p>
-            <p>Aus all diesen Gründen liebe ich Spiele und werde mich auch weiterhin mit Leidenschaft in dieser Welt bewegen.</p>
-        </div>
-        <div>
-            <h2 class="center-text">Favoriten</h2>
-            <div class="fav">
-                <h6>1.</h6>
-                <div>
-                    <div class="fav-head">
-                        <h4>Sea of Thieves</h4>
-                        <img class="game" src="https://compass-ssl.xboxlive.com/assets/6b/dc/6bdc50b6-e83c-4728-994e-66ba6318cb38.jpg?n=hero_tablet.jpg" alt="">
+        <main>
+            <div>
+                <h1 class="center-text">Videospiele</h1>
+                <p>Ich habe mich schon immer von Videospielen faszinieren lassen. Es ist erstaunlich, wie sie es schaffen, eine Welt voller Abenteuer und Fantasie zu erschaffen, in die man eintauchen und die man selbst erleben kann. Videospiele sind für mich nicht nur ein unterhaltsames Hobby, sondern auch ein Ort, an dem ich mich entspannen und meiner Kreativität freien Lauf lassen kann.</p>
+                <p>Besonders reizen mich Spiele, die eine tiefe und fesselnde Handlung haben, die mich mit ihren Charakteren und der Welt, in der sie leben, mitreißen können. Aber auch Spiele, die es mir ermöglichen, meine Fähigkeiten und Strategien zu verbessern, haben einen besonderen Reiz für mich. Es gibt einfach nichts Besseres, als die Herausforderung anzunehmen und zu versuchen, immer besser zu werden.</p>
+                <p>Ich glaube, dass Spiele uns auch viel über uns selbst und unsere Umwelt lehren können. Sie können uns dabei helfen, Probleme auf eine neue Art und Weise zu betrachten und uns wertvolle Fähigkeiten beibringen, wie zum Beispiel Zusammenarbeit, Zielorientierung und Durchhaltevermögen. Darüber hinaus ermöglichen uns Videospiele, mit anderen Menschen aus der ganzen Welt zu interagieren und Freundschaften zu knüpfen, die sonst vielleicht nie entstanden wären.</p>
+                <p>Aus all diesen Gründen liebe ich Spiele und werde mich auch weiterhin mit Leidenschaft in dieser Welt bewegen.</p>
+            </div>
+            <div>
+                <h2 class="center-text">Favoriten</h2>
+                <div class="fav">
+                    <h6>1.</h6>
+                    <div>
+                        <div class="fav-head">
+                            <h4>Sea of Thieves</h4>
+                            <img class="game" src="https://compass-ssl.xboxlive.com/assets/6b/dc/6bdc50b6-e83c-4728-994e-66ba6318cb38.jpg?n=hero_tablet.jpg" alt="">
+                        </div>
+                        <p class="review">Ich bin absolut besessen von Sea of Thieves, denn es lässt mich in die Welt eines Piraten eintauchen und auf der Suche nach Schätzen und Abenteuern über die Meere segeln. Das Spiel ist ein wahres Meisterwerk, mit atemberaubenden Landschaften, einer unglaublichen Detailgenauigkeit und einer epischen Geschichte, die mich immer wieder in ihren Bann zieht. Jeder Spielmodus ist einzigartig und ich genieße es, mit Freunden zu spielen oder alleine in die See zu stechen.</p>
+                        <p class="review">Was ich an Sea of Thieves auch schätze, ist, dass es kein Pay-to-Win-System gibt. Es geht darum, seine Fähigkeiten und sein Wissen als Pirat zu verbessern, anstatt einfach nur bessere Ausrüstung zu kaufen. Das Spiel fordert mich heraus, immer weiter zu lernen und neue Fähigkeiten zu erwerben, was mich immer wieder motiviert, weiterzuspielen. Es gibt immer neue Inseln zu entdecken, Schätze zu finden und Feinde zu besiegen, und ich freue mich jedes Mal aufs Neue auf das nächste Abenteuer.</p>
                     </div>
-                    <p class="review">Ich bin absolut besessen von Sea of Thieves, denn es lässt mich in die Welt eines Piraten eintauchen und auf der Suche nach Schätzen und Abenteuern über die Meere segeln. Das Spiel ist ein wahres Meisterwerk, mit atemberaubenden Landschaften, einer unglaublichen Detailgenauigkeit und einer epischen Geschichte, die mich immer wieder in ihren Bann zieht. Jeder Spielmodus ist einzigartig und ich genieße es, mit Freunden zu spielen oder alleine in die See zu stechen.</p>
-                    <p class="review">Was ich an Sea of Thieves auch schätze, ist, dass es kein Pay-to-Win-System gibt. Es geht darum, seine Fähigkeiten und sein Wissen als Pirat zu verbessern, anstatt einfach nur bessere Ausrüstung zu kaufen. Das Spiel fordert mich heraus, immer weiter zu lernen und neue Fähigkeiten zu erwerben, was mich immer wieder motiviert, weiterzuspielen. Es gibt immer neue Inseln zu entdecken, Schätze zu finden und Feinde zu besiegen, und ich freue mich jedes Mal aufs Neue auf das nächste Abenteuer.</p>
+                </div>
+                <div class="fav">
+                    <h6>2.</h6>
+                    <div>
+                        <div class="fav-head">
+                            <h4>ARK: Survival Evolved</h4>
+                            <img class="game" src="https://portforward.com/ark-survival-evolved/default.webp" alt="">
+                        </div>
+                        <p class="review">Ich liebe ARK: Survival Evolved, weil es mich in eine Welt voller Abenteuer und Dinosaurier entführt. Es gibt nichts Besseres, als auf einem riesigen T-Rex durch die Wälder zu reiten und gleichzeitig gegen andere Spieler zu kämpfen, die versuchen, mein Territorium zu erobern. Das Spiel bietet eine unglaubliche Menge an Herausforderungen, von der Jagd nach seltenen Ressourcen bis hin zur Zähmung von gefährlichen Kreaturen. Jeder Tag bringt neue Überraschungen und ich liebe es, meine Strategien und Taktiken immer wieder neu zu überdenken.</p>
+                        <p class="review">Das Spiel bietet auch eine großartige Community und es ist erstaunlich, wie viele Freundschaften ich durch ARK aufgebaut habe. Es gibt immer jemanden, der bereit ist, zu helfen oder an einer neuen Expedition teilzunehmen. ARK hat mich gelehrt, dass Zusammenarbeit der Schlüssel zum Erfolg ist und dass man viel erreichen kann, wenn man sich auf seine Freunde verlassen kann.</p>
+                    </div>
+                </div>
+                <div class="fav">
+                    <h6>3.</h6>
+                    <div>
+                        <div class="fav-head">
+                            <h4>Starcraft 2</h4>
+                            <img class="game" src="https://i0.wp.com/therefinedgeek.com.au/wp-content/uploads/2015/12/StarCraft-2-Legacy-of-the-Void-Review-Screenshot-Wallpaper-Title-Screen.jpg?ssl=1" alt="">
+                        </div>
+                        <p class="review">Starcraft 2 ist für mich ein unglaublich fesselndes Spiel, das mich immer wieder aufs Neue herausfordert. Die Welt der Terraner, Zerg und Protoss ist voller Taktik, Strategie und Action und es gibt immer etwas Neues zu entdecken. Ich liebe die vielfältigen Möglichkeiten, die das Spiel bietet, von den verschiedenen Einheiten und Fähigkeiten bis hin zu den verschiedenen Strategien, die ich einsetzen kann.</p>
+                        <p class="review">Was ich an Starcraft 2 auch sehr schätze, ist die unglaubliche Tiefe des Spiels. Es gibt so viele Aspekte zu berücksichtigen, von der Produktion von Einheiten und Gebäuden bis hin zur Platzierung von Truppen und der Erkundung der Karte. Das Spiel fordert mich ständig heraus, immer besser zu werden und meine Fähigkeiten zu verbessern. Und ich liebe es, dass ich das Spiel mit anderen Menschen auf der ganzen Welt spielen und gegen sie antreten kann.</p>
+                    </div>
                 </div>
             </div>
-            <div class="fav">
-                <h6>2.</h6>
-                <div>
-                    <div class="fav-head">
-                        <h4>ARK: Survival Evolved</h4>
-                        <img class="game" src="https://portforward.com/ark-survival-evolved/default.webp" alt="">
-                    </div>
-                    <p class="review">Ich liebe ARK: Survival Evolved, weil es mich in eine Welt voller Abenteuer und Dinosaurier entführt. Es gibt nichts Besseres, als auf einem riesigen T-Rex durch die Wälder zu reiten und gleichzeitig gegen andere Spieler zu kämpfen, die versuchen, mein Territorium zu erobern. Das Spiel bietet eine unglaubliche Menge an Herausforderungen, von der Jagd nach seltenen Ressourcen bis hin zur Zähmung von gefährlichen Kreaturen. Jeder Tag bringt neue Überraschungen und ich liebe es, meine Strategien und Taktiken immer wieder neu zu überdenken.</p>
-                    <p class="review">Das Spiel bietet auch eine großartige Community und es ist erstaunlich, wie viele Freundschaften ich durch ARK aufgebaut habe. Es gibt immer jemanden, der bereit ist, zu helfen oder an einer neuen Expedition teilzunehmen. ARK hat mich gelehrt, dass Zusammenarbeit der Schlüssel zum Erfolg ist und dass man viel erreichen kann, wenn man sich auf seine Freunde verlassen kann.</p>
-                </div>
+            <a id="back-to-top" class="fa fa-chevron-up" href="#" title="Back to top"></a>
+        </main>
+        <footer>
+            <p>© 2023 Xenoreaper</p>
+            <div class="socials">
+                <a href="https://youtube.com/@Xenoreaper" class="fa fa-youtube"></a>
+                <a href="https://youtube.com/@Xeno" class="fa fa-youtube"></a>
+                <a href="https://youtube.com/@XenBox" class="fa fa-youtube"></a>
+                <a href="https://youtu.be/xpiYozkx6xw" class="fa fa-youtube"></a>
+                <a href="https://twitter.com/@Xen0reaper" class="fa fa-twitter"></a>
+                <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+                <a href="https://instagram.com/x3noreaper/" class="fa fa-instagram"></a>
+                <a href="https://twitch.tv/xen0reaper" class="fa fa-twitch"></a>
             </div>
-            <div class="fav">
-                <h6>3.</h6>
-                <div>
-                    <div class="fav-head">
-                        <h4>Starcraft 2</h4>
-                        <img class="game" src="https://i0.wp.com/therefinedgeek.com.au/wp-content/uploads/2015/12/StarCraft-2-Legacy-of-the-Void-Review-Screenshot-Wallpaper-Title-Screen.jpg?ssl=1" alt="">
-                    </div>
-                    <p class="review">Starcraft 2 ist für mich ein unglaublich fesselndes Spiel, das mich immer wieder aufs Neue herausfordert. Die Welt der Terraner, Zerg und Protoss ist voller Taktik, Strategie und Action und es gibt immer etwas Neues zu entdecken. Ich liebe die vielfältigen Möglichkeiten, die das Spiel bietet, von den verschiedenen Einheiten und Fähigkeiten bis hin zu den verschiedenen Strategien, die ich einsetzen kann.</p>
-                    <p class="review">Was ich an Starcraft 2 auch sehr schätze, ist die unglaubliche Tiefe des Spiels. Es gibt so viele Aspekte zu berücksichtigen, von der Produktion von Einheiten und Gebäuden bis hin zur Platzierung von Truppen und der Erkundung der Karte. Das Spiel fordert mich ständig heraus, immer besser zu werden und meine Fähigkeiten zu verbessern. Und ich liebe es, dass ich das Spiel mit anderen Menschen auf der ganzen Welt spielen und gegen sie antreten kann.</p>
-                </div>
-            </div>
-        </div>
-        <a id="back-to-top" class="fa fa-chevron-up" href="#" title="Back to top"></a>
-    </main>
-    <footer>
-        <p>© 2023 Xenoreaper</p>
-        <div class="socials">
-            <a href="https://youtube.com/@Xenoreaper" class="fa fa-youtube"></a>
-            <a href="https://youtube.com/@Xeno" class="fa fa-youtube"></a>
-            <a href="https://youtube.com/@XenBox" class="fa fa-youtube"></a>
-            <a href="https://youtu.be/xpiYozkx6xw" class="fa fa-youtube"></a>
-            <a href="https://twitter.com/@Xen0reaper" class="fa fa-twitter"></a>
-            <a href="https://linkedin.com" class="fa fa-linkedin"></a>
-            <a href="https://instagram.com/x3noreaper/" class="fa fa-instagram"></a>
-            <a href="https://twitch.tv/xen0reaper" class="fa fa-twitch"></a>
-        </div>
-        <a id="footer-impressum" href="impressum.html">Impressum</a>
-    </footer>
-</body>
-
+            <a id="footer-impressum" href="impressum.html">Impressum</a>
+        </footer>
+    </body>
 </html>

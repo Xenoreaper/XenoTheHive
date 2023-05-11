@@ -88,6 +88,18 @@
     color: #0066CC;
 }
 
+.dark-mode .copyright {
+    background: rgb(230, 230, 230);
+}
+
+.dark-mode .cc-part1{
+    color: #0066CC;
+}
+
+.dark-mode .cc-part2 , .dark-mode .cc3, .dark-mode .cc-link {
+    color: black;
+}
+
 .fa-chevron-right {
     margin-right: 10px;
 }
