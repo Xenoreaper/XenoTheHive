@@ -29,3 +29,13 @@ For a GNU GPL V3.0 the following applies:
 | ✔ Distribution |  | ℹ Disclose source |
 | ✔ Patent use |  | ℹ Same license |
 | ✔ Private use |  |  |
+
+## Versions
+#### Version 1
+Website created with ChatGPT to test ChatGPT's capabilities.
+#### Version 2
+Website revamped for a college project
+#### Version 2.5.4
+Final version before hand-in for college
+#### Version 2.5.5 and later
+Bug fixes and minor improvements of issues I noticed post hand-in
